@@ -158,6 +158,13 @@ namespace FileReader
             }
             Storage.SetMainGroup(com);
 
+            /*
+             порядок загрузки
+            классы
+            дисциплины
+            преподаватели
+            группы
+             */
 
             for (int i = 0; i < allfolders.Length; i++)
             {
@@ -196,9 +203,43 @@ namespace FileReader
 
             GroupData group = new GroupData(name);
             XmlDocument root = new XmlDocument();
-            root.Load(path);//(mainPath + "Charter.xml");
-            XElement node;// = XDocument.Parse(File.ReadAllText(mainPath +"Roles.xml")).Element("root");
-            XmlNodeList nodes = root.DocumentElement.SelectNodes("descendant::Action"); // You can also use XPath here
+            root.Load(path);
+            XElement node;
+            XmlNodeList nodes;
+
+            /*
+             
+                XElement action = new XElement("Teacher");
+                string str = Storage.GetName("Teacher", group.Teachers[i].Name);
+                foreach (int j in group.Teachers[i].Subjects)
+                   str += AddsString(sSubject, "Subject", j);
+
+                action.Add(new XElement("Text", str));
+                root.Add(action);
+            }
+
+            foreach(TableData data in group.Subjects)
+            {
+                XElement action = new XElement("Subject");
+             
+             */
+            nodes = root.DocumentElement.SelectNodes("descendant::Teacher"); // You can also use XPath here
+            foreach (XmlNode x in nodes)
+            {
+                node = XElement.Load(new XmlNodeReader(x));
+                int[] id = 
+                TableData data = new TableData(node.Element("Time").Value);
+                data.SetRealTime(node.Element("StartTime").Value, true);
+                data.SetRealTime(node.Element("EndTime").Value, false);
+                // Storage.ConnectData(data);
+                data.Subject = AddsString(sSubject, "Subject", node.Element("Subject").Value);
+                data.Teacher = AddsString(sTeacher, "Teacher", node.Element("Teacher").Value);
+                data.ClassRoom = AddsString(sClass, "Class", node.Element("Class").Value);
+
+                group.Subjects.Add(data);
+            }
+
+            nodes = root.DocumentElement.SelectNodes("descendant::Subject"); // You can also use XPath here
             foreach (XmlNode x in nodes)
             {
                 node = XElement.Load(new XmlNodeReader(x));
