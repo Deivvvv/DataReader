@@ -11,8 +11,17 @@ using System.IO;
 using DataSpace;
 using TableSystem;
 namespace FileReader
-{ 
-
+{
+    public struct stringData
+    {
+        public int Id;
+        public string Text;
+        public stringData(int id, string str)
+        {
+            Id = id;
+            Text = str;
+        }
+    }
     static class Reader
     {
         static string mainPath = Application.dataPath + "/Dir/";
@@ -25,12 +34,69 @@ namespace FileReader
                     Directory.CreateDirectory($"{mainPath}{path}/");
 
             if (AddTableScan())
-                RebuildTable();
-        }
+                AddData();
 
+            /*
+             load
+            class room
+            subject
+            teacher <-classroom <-subject
+             
+             */
+        }
+        static void AddData()
+        {
+            int i = 0;
+            string[] com = Directory.GetFiles($"{mainPath}AddTable/", "*.xml");//.xml
+            XmlDocument root = new XmlDocument();
+            XElement node;// = XDocument.Parse(File.ReadAllText(mainPath +"Roles.xml")).Element("root");
+            XmlNodeList nodes; // You can also use XPath here
+            foreach (string path in com)
+            {
+                root.Load(path);//(mainPath + "Charter.xml");
+                string[] com1 = path.Split('_');//com[0] - путь до исходного файла // com[1+] |table|gmu|05-2023
+                string newPath = $"{mainPath}{com1[1]}/{com1[2]}/";
+                switch (com1[1])
+                {
+                    //case ("Class"):
+                    //    File.Move(path, $"{newPath}{com1[3]}");
+                    //    break;
+                    case ("GroupTable"):
+                        i = Storage.FindId("Group", com1[2]);
+                        {
+                            com1 = System.DateTime.Today.ToString().Split(' ');
+                            int[] timeData = com1[0].Split('.').Select(int.Parse).ToArray();
+                            //int[] timeData = com1.Select(int.Parse).ToArray();
+                            List<TableData> tableDatas = new List<TableData>();
+                            nodes = root.DocumentElement.SelectNodes("descendant::Action"); // You can also use XPath here
+                            foreach (XmlNode x in nodes)
+                            {
+                                node = XElement.Load(new XmlNodeReader(x));
+                                TableData data = new TableData(node.Element("Time").Value, com[0]);
+                                if (timeData[0] > data.Time[0] && timeData[1] > data.Time[1])
+                                    continue;
+
+                                data.SetRealTime(node.Element("StartTime").Value, true);
+                                data.SetRealTime(node.Element("EndTime").Value, false);
+                                Storage.ConnectData(data);
+                                data.Subject = Storage.FindId("Subject", node.Element("Subject").Value);
+                                data.Teacher = Storage.FindId("Teacher", node.Element("Teacher").Value);
+                                data.ClassRoom = Storage.FindId("Class", node.Element("ClassRoom").Value);
+
+                                tableDatas.Add(data);
+                            }
+                            Storage.GroupSetTable(tableDatas);
+                        }
+
+                        break;
+                }
+            }
+            
+        }
         static bool AddTableScan()
         {
             string[] com = Directory.GetFiles($"{mainPath}AddTable/", "*.xml");//.xml
+
             foreach (string path in com)
             {
                 Debug.Log(path);
@@ -80,8 +146,55 @@ namespace FileReader
             //Debug.Log(DataTime);
             // string[] com = DataTime.Split('.');
         }
-        static void ReadTable(string path)
+        static void LoadGroup()
         {
+            string[] com1;
+            string[] allfolders = Directory.GetDirectories($"{mainPath}Group/");
+            string[] com = new string[allfolders.Length];
+            for (int i = 0; i < com.Length; i++)
+            {
+                com1 = allfolders[i].Split('/');
+                com[i] = com1[com1.Length - 2];
+            }
+            Storage.SetMainGroup(com);
+
+
+            for (int i = 0; i < allfolders.Length; i++)
+            {
+                com = Directory.GetFiles(allfolders[i], "*.xml");
+                for (int j = 0; j < com.Length; j++)
+                {
+                    com1 = com[1].Split('/');
+                    com1 = com1[com1.Length - 1].Split('.');
+                    Storage.GroupAdd(i, LoadGroup(com[j], com1[0]));
+                    //com1[0]
+                    UnityEngine.Debug.Log("! указатель на группу прикрепляется вообщем списке в формате int[2]");
+                }
+            }
+        }
+
+
+        static int AddsString(List<stringData> sSub, string tayp, string name)
+        {
+
+            int k = sSub.FindIndex(x => x.Text == name);
+            if (k == -1)
+            {
+                k = Storage.FindId(tayp, name);
+                sSub.Add(new stringData(k, name));
+            }
+
+            return k;
+        }
+
+        static GroupData LoadGroup(string path, string name)
+        {
+
+            List<stringData> sSubject = new List<stringData>();
+            List<stringData> sTeacher = new List<stringData>();
+            List<stringData> sClass = new List<stringData>();
+
+            GroupData group = new GroupData(name);
             XmlDocument root = new XmlDocument();
             root.Load(path);//(mainPath + "Charter.xml");
             XElement node;// = XDocument.Parse(File.ReadAllText(mainPath +"Roles.xml")).Element("root");
@@ -90,70 +203,118 @@ namespace FileReader
             {
                 node = XElement.Load(new XmlNodeReader(x));
                 TableData data = new TableData(node.Element("Time").Value);
-                string[] com = node.Element("Time").Value.Split('.');
-                //data.SetStartTime();
-                //Debug.Log($"{data.StartTime[0]}-{data.StartTime[1]}");
-              //  data.SetTime(com[0], false, false);
-              //  data.SetTime(com[1], false, false);
-              //  string str = "" + data.Day;
+                data.SetRealTime(node.Element("StartTime").Value, true);
+                data.SetRealTime(node.Element("EndTime").Value, false);
+               // Storage.ConnectData(data);
+                data.Subject = AddsString(sSubject,"Subject", node.Element("Subject").Value);
+                data.Teacher = AddsString(sTeacher,"Teacher", node.Element("Teacher").Value);
+                data.ClassRoom = AddsString(sClass,"Class", node.Element("Class").Value);
 
-                //data.Set(node.Element("Data").Value);
-
-                //   // words.Add(data);
+                group.Subjects.Add(data);
             }
+            return group;
+        }
+
+        static void ReadTable(string path)
+        {
+
+            TableData data = null;
+            string[] com;
+            int[] ints = new int[2];
+            com = path.Split('/');
+            ints[0] = Storage.FindId("MainGroup", com[com.Length - 2]);
+            com = com[com.Length - 1].Split('.');
+            ints[1] = Storage.FindId($"{ints[0]}_Group", com[0]);
+
+            XmlDocument root = new XmlDocument();
+            root.Load(path);//(mainPath + "Charter.xml");
+            XElement node;// = XDocument.Parse(File.ReadAllText(mainPath +"Roles.xml")).Element("root");
+            XmlNodeList nodes = root.DocumentElement.SelectNodes("descendant::Action"); // You can also use XPath here
+            foreach (XmlNode x in nodes)
+            {
+                node = XElement.Load(new XmlNodeReader(x));
+                data = new TableData(node.Element("Time").Value, com[0]);
+                data.SetRealTime(node.Element("StartTime").Value, true);
+                data.SetRealTime(node.Element("EndTime").Value, false);
+                Storage.ConnectData(data);
+                data.Subject = Storage.FindId("Subject",node.Element("Subject").Value);
+                data.Teacher = Storage.FindId("Teacher",node.Element("Teacher").Value);
+                data.ClassRoom = Storage.FindId("Class", node.Element("Class").Value);
+            }
+
+            if(data != null)
+                Storage.SaveGroup(data.Group);
             //string[] origData = textassetData.text.Split
         }
 
-        //private static HSSFWorkbook wk;
-        //private static FileStream fs;          // Файловый поток
+        #region groupData
+        static void ReadDataGroup()
+        {
+            string[] com = Directory.GetFiles($"{mainPath}Data/Group/", "*.xml");//.xml
+        }
+        static List<SubjectData> ReadDataSubject()
+        {
+            List<SubjectData> datas = new List<SubjectData>();
+            string path = $"{mainPath}Data/Misk/Subject.xml";
+            if (File.Exists(path))
+            {
 
-        //private static ISheet sheet;           // Рабочий лист
-        //private static IRow row;               //Строка
-        //private static ICell cell;             // Столбец
+                SubjectData data;
+                XmlDocument root = new XmlDocument();
+                root.Load(path);//(mainPath + "Charter.xml");
+                XElement node;// = XDocument.Parse(File.ReadAllText(mainPath +"Roles.xml")).Element("root");
+                XmlNodeList nodes = root.DocumentElement.SelectNodes("descendant::Action"); // You can also use XPath here
+                foreach (XmlNode x in nodes)
+                {
+                    node = XElement.Load(new XmlNodeReader(x));
+                    data = new SubjectData(node.Element("Name").Value);
 
-        // Start is called before the first frame update
-        //public static void Starts()
-        //{
-        //    string[] com = { "AddTable" ,"Group","DataTime"};
-        //    foreach(string path in com)
-        //        if (!Directory.Exists($"{mainPath}{path}/"))
-        //            Directory.CreateDirectory($"{mainPath}{path}/");
-        //    ReadAddTable();
-        //    //CreateExcel();
-        //    RebuildTable();
-        //}
-        //static void ReadAddTable()
-        //{
-        //    string[] com = Directory.GetFiles($"{mainPath}AddTable/", "*.xlsx");//.xml
-        //    foreach(string path in com)
-        //    {
-        //        //string[] origData = textassetData.text.Split
-        //        fs = File.OpenRead(path);
-        //        wk = new HSSFWorkbook(fs);
-        //        sheet = wk.GetSheetAt(0);
+                    datas.Add(data);
+                }
+            }
+            return datas;
+        }
+        static List<TeacherData> ReadDataTeacher()
+        {
+            List<TeacherData> datas = new List<TeacherData>();
 
-        //        List<string> data = new List<string>();
-        //        for (int j = 1; j <= sheet.LastRowNum; j++)
-        //        {
-        //            //чтение содержимого файла
-        //            //0-data  1-time 2-dischiplin 3- prepod 4- audit
+            string[] com = Directory.GetFiles($"{mainPath}Data/Teacher/", "*.xml");//.xml
+            TeacherData data;
+            foreach (string path in com)
+            {
+                XmlDocument root = new XmlDocument();
+                //root.Load(path);//(mainPath + "Charter.xml");
+                XElement node = XDocument.Parse(File.ReadAllText(path)).Element("root");
+                //node = XDocument.Parse(File.ReadAllText(mainPath + "Roles.xml")).Element("root");
+                data = new TeacherData(node.Element("Name").Value);
 
-        //            row = sheet.GetRow(j);
-        //            if (row != null)
-        //            {
-        //                string str = row.GetCell(0).ToString();
-        //                for (int k = 1; k < row.LastCellNum; k++)
-        //                    str +="|"+ row.GetCell(k).ToString();
-        //                data.Add(str);
-        //            }
-        //        }
-        //        AddTable(path,data);//com- system anme, data - table info
-        //    }
+                datas.Add(data);
 
-        //    //Sys.CreateNewRaspis();
-        //}
+            }
+            return datas;
+        }
+        static List<ClassData> ReadDataClassRoom()
+        {
+            List<ClassData> datas = new List<ClassData>();
+            string path = $"{mainPath}Data/Misk/ClassRoom.xml";
+            if (File.Exists(path))
+            {
+                ClassData data;
+                XmlDocument root = new XmlDocument();
+                root.Load(path);//(mainPath + "Charter.xml");
+                XElement node;// = XDocument.Parse(File.ReadAllText(mainPath +"Roles.xml")).Element("root");
+                XmlNodeList nodes = root.DocumentElement.SelectNodes("descendant::Action"); // You can also use XPath here
+                foreach (XmlNode x in nodes)
+                {
+                    node = XElement.Load(new XmlNodeReader(x));
+                    data = new ClassData(node.Element("Name").Value);
 
-
+                    datas.Add(data);
+                }
+            }
+            return datas;
+        }
+        #endregion
         //static void AddTable(string name, List<string> data)
         //{
         //    //data ->превращем в xml
@@ -258,5 +419,88 @@ namespace FileReader
         //        }
         //    }
         //}
+    }
+
+    static class Saver
+    {
+        static string AddsString(List<stringData> sSub, string tayp,int id,bool Short = false)
+        {
+            string str = (Short) ? "" : "_";
+            
+            int k = sSub.FindIndex(x => x.Id == id);
+            if (k != -1)
+                str += $"_{sSub[k].Text}";
+            else
+            {
+                stringData data = new stringData(id, Storage.GetName(tayp, id));
+                str += $"_{data.Text}";
+                sSub.Add(data);
+            }
+
+            return str;
+        }
+        static string mainPath = Application.dataPath + "/Dir/";
+        public static void SaveGroup(GroupData group)
+        {
+            List<stringData> sSubject = new List<stringData>();
+            List<stringData> sTeacher = new List<stringData>();
+            List<stringData> sClass = new List<stringData>();
+
+            XElement root = new XElement("root");
+            //root.Add(new XElement("Name", story.Name));
+            for (int i = 0; i < group.Teachers.Count; i++)
+            {
+                XElement action = new XElement("Teacher");
+                string str = Storage.GetName("Teacher", group.Teachers[i].Name);
+                foreach (int j in group.Teachers[i].Subjects)
+                   str += AddsString(sSubject, "Subject", j);
+
+                action.Add(new XElement("Text", str));
+                root.Add(action);
+            }
+
+            foreach(TableData data in group.Subjects)
+            {
+                XElement action = new XElement("Subject");
+                string str = "" + data.Time[0];
+                for (int i = 1; i < data.Time.Length; i++)
+                    str += "." + data.Time[i];
+                action.Add("Time",str);
+
+                action.Add("Subject", AddsString(sSubject, "Subject",data.Subject, true));
+                action.Add("Teacher", AddsString(sTeacher, "Teacher", data.Teacher, true));
+                action.Add("Class", AddsString(sClass, "Class", data.ClassRoom, true));
+
+
+                root.Add(action);
+            }
+           
+
+            XDocument saveDoc = new XDocument(root);
+            File.WriteAllText($"{mainPath}Group/{group.Name}.xml", saveDoc.ToString());
+        }
+
+        public static void SaveClass(ClassData data)
+        {
+            XElement root = new XElement("root");
+
+
+            XDocument saveDoc = new XDocument(root);
+            File.WriteAllText($"{mainPath}ClassRoom/{data.Name}.xml", saveDoc.ToString());
+        }
+        public static void SaveTeacher(TeacherData data)
+        {
+            XElement root = new XElement("root");
+
+            XDocument saveDoc = new XDocument(root);
+            File.WriteAllText($"{mainPath}Teacher/{data.Name}.xml", saveDoc.ToString());
+        }
+        public static void SaveSubject(SubjectData data)
+        {
+            XElement root = new XElement("root");
+
+            XDocument saveDoc = new XDocument(root);
+            File.WriteAllText($"{mainPath}Subject/{data.Name}.xml", saveDoc.ToString());
+        }
     }
 }
