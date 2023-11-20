@@ -1,410 +1,326 @@
 <root>
-  <Action>
-    <Time>01.11.2023.15.00.16.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+  <TTeacher>
+    <Text>Кальсина А. А._Региональное управление и территориальное планирование (л)_Региональное управление и территориальное планирование (п)_Региональное управление и территориальное планирование (экзамен)</Text>
+  </TTeacher>
+  <TTeacher>
+    <Text>Шестова Т. Ю._Этика государственной и муниципальной службы (л)_Этика государственной и муниципальной службы (п)_Практика по получению профессиональных умений и опыта профессиональной деятельности и исследовательская работа (л)_Этика государственной и муниципальной службы (зачёт)</Text>
+  </TTeacher>
+  <TTeacher>
+    <Text>Лангинен А. В._Основы государственной и муниципальной службы (л)_Основы государственной и муниципальной службы (п)_Основы государственной и муниципальной службы (защита курсовой работы)_Основы государственной и муниципальной службы (экзамен)</Text>
+  </TTeacher>
+  <TTeacher>
+    <Text>Домбровский М. А._Экономика муниципальных образований (л)_Экономика муниципальных образований (п)_Экономика муниципальных образований (зачёт)</Text>
+  </TTeacher>
+  <TTeacher>
+    <Text>Бызова М. В._Основы национальной безопасности (л)_Основы национальной безопасности (п)_Основы национальной безопасности (зачёт)</Text>
+  </TTeacher>
+  <TTeacher>
+    <Text>Носков А. А._Прогнозирование и планирование (л)_Прогнозирование и планирование (п)_Прогнозирование и планирование (зачёт)</Text>
+  </TTeacher>
+  <TTeacher>
+    <Text>Олесиюк О. С._Документационное обеспечение и делопроизводство в государственном и муниципальном управлении (л)_Документационное обеспечение и делопроизводство в государственном и муниципальном управлении (п)_Документационное обеспечение и делопроизводство в государственном и муниципальном управлении (зачёт)</Text>
+  </TTeacher>
+  <TTeacher>
+    <Text>Мудров О. И._Исследование систем управления (л)_Исследование систем управления (п)_Исследование систем управления (зачёт)</Text>
+  </TTeacher>
+  <SSubject>
+    <Time>1.11.2023.15.0.16.20</Time>
     <Subject>Региональное управление и территориальное планирование (л)</Subject>
     <Teacher>Кальсина А. А.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>01.11.2023.16.30.19.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>1.11.2023.16.30.19.20</Time>
     <Subject>Этика государственной и муниципальной службы (л)</Subject>
     <Teacher>Шестова Т. Ю.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>02.11.2023.13.20.16.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>2.11.2023.13.20.16.20</Time>
     <Subject>Основы государственной и муниципальной службы (л)</Subject>
     <Teacher>Лангинен А. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>03.11.2023.15.00.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>3.11.2023.15.0.17.50</Time>
     <Subject>Этика государственной и муниципальной службы (п)</Subject>
     <Teacher>Шестова Т. Ю.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>07.11.2023.13.20.14.40</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>7.11.2023.13.20.14.40</Time>
     <Subject>Практика по получению профессиональных умений и опыта профессиональной деятельности и исследовательская работа (л)</Subject>
     <Teacher>Шестова Т. Ю.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>07.11.2023.15.00.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>7.11.2023.15.0.17.50</Time>
     <Subject>Экономика муниципальных образований (л)</Subject>
     <Teacher>Домбровский М. А.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>07.11.2023.18.00.19.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>7.11.2023.18.0.19.20</Time>
     <Subject>Экономика муниципальных образований (п)</Subject>
     <Teacher>Домбровский М. А.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>08.11.2023.11.50.14.40</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>8.11.2023.11.50.14.40</Time>
     <Subject>Основы государственной и муниципальной службы (л)</Subject>
     <Teacher>Лангинен А. В.</Teacher>
-    <ClassRoom>105</ClassRoom>
-  </Action>
-  <Action>
-    <Time>08.11.2023.15.00.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105</Class>
+  </SSubject>
+  <SSubject>
+    <Time>8.11.2023.15.0.17.50</Time>
     <Subject>Этика государственной и муниципальной службы (п)</Subject>
     <Teacher>Шестова Т. Ю.</Teacher>
-    <ClassRoom>105</ClassRoom>
-  </Action>
-  <Action>
-    <Time>09.11.2023.15.00.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105</Class>
+  </SSubject>
+  <SSubject>
+    <Time>9.11.2023.15.0.17.50</Time>
     <Subject>Экономика муниципальных образований (п)</Subject>
     <Teacher>Домбровский М. А.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>09.11.2023.18.00.19.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>9.11.2023.18.0.19.20</Time>
     <Subject>Экономика муниципальных образований (зачёт)</Subject>
     <Teacher>Домбровский М. А.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>09.11.2023.19.30.20.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>9.11.2023.19.30.20.50</Time>
     <Subject>Основы национальной безопасности (л)</Subject>
     <Teacher>Бызова М. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>10.11.2023.11.50.14.40</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы государственной и муниципальной службы (л)</Subject>
     <Teacher>Лангинен А. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>10.11.2023.15.00.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>10.11.2023.15.0.17.50</Time>
     <Subject>Прогнозирование и планирование (л)</Subject>
     <Teacher>Носков А. А.</Teacher>
-    <ClassRoom>301</ClassRoom>
-  </Action>
-  <Action>
-    <Time>10.11.2023.18.00.19.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>301</Class>
+  </SSubject>
+  <SSubject>
+    <Time>10.11.2023.18.0.19.20</Time>
     <Subject>Основы национальной безопасности (л)</Subject>
     <Teacher>Бызова М. В.</Teacher>
-    <ClassRoom>301</ClassRoom>
-  </Action>
-  <Action>
+    <Class>301</Class>
+  </SSubject>
+  <SSubject>
     <Time>11.11.2023.8.30.13.10</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Документационное обеспечение и делопроизводство в государственном и муниципальном управлении (л)</Subject>
     <Teacher>Олесиюк О. С.</Teacher>
-    <ClassRoom>105</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105</Class>
+  </SSubject>
+  <SSubject>
     <Time>11.11.2023.13.20.16.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Прогнозирование и планирование (п)</Subject>
     <Teacher>Носков А. А.</Teacher>
-    <ClassRoom>301</ClassRoom>
-  </Action>
-  <Action>
+    <Class>301</Class>
+  </SSubject>
+  <SSubject>
     <Time>13.11.2023.11.50.13.10</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы государственной и муниципальной службы (л)</Subject>
     <Teacher>Лангинен А. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>13.11.2023.13.20.14.40</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы государственной и муниципальной службы (п)</Subject>
     <Teacher>Лангинен А. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>13.11.2023.15.00.16.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>13.11.2023.15.0.16.20</Time>
     <Subject>Основы национальной безопасности (л)</Subject>
     <Teacher>Бызова М. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>13.11.2023.16.30.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы национальной безопасности (п)</Subject>
     <Teacher>Бызова М. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>14.11.2023.13.20.14.40</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Этика государственной и муниципальной службы (зачёт)</Subject>
     <Teacher>Шестова Т. Ю.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>14.11.2023.15.00.19.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>14.11.2023.15.0.19.20</Time>
     <Subject>Документационное обеспечение и делопроизводство в государственном и муниципальном управлении (п)</Subject>
     <Teacher>Олесиюк О. С.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>15.11.2023.15.00.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>15.11.2023.15.0.17.50</Time>
     <Subject>Исследование систем управления (л)</Subject>
     <Teacher>Мудров О. И.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>15.11.2023.18.00.20.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>15.11.2023.18.0.20.50</Time>
     <Subject>Основы национальной безопасности (л)</Subject>
     <Teacher>Бызова М. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>16.11.2023.11.50.14.40</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы государственной и муниципальной службы (п)</Subject>
     <Teacher>Лангинен А. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>16.11.2023.15.00.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>16.11.2023.15.0.17.50</Time>
     <Subject>Региональное управление и территориальное планирование (л)</Subject>
     <Teacher>Кальсина А. А.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>16.11.2023.18.00.19.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>16.11.2023.18.0.19.20</Time>
     <Subject>Основы национальной безопасности (п)</Subject>
     <Teacher>Бызова М. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>17.11.2023.15.00.16.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>17.11.2023.15.0.16.20</Time>
     <Subject>Исследование систем управления (л)</Subject>
     <Teacher>Мудров О. И.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>17.11.2023.16.30.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Исследование систем управления (п)</Subject>
     <Teacher>Мудров О. И.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>17.11.2023.18.00.20.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>17.11.2023.18.0.20.50</Time>
     <Subject>Основы национальной безопасности (л)</Subject>
     <Teacher>Бызова М. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>18.11.2023.10.00.11.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>18.11.2023.10.0.11.20</Time>
     <Subject>Прогнозирование и планирование (п)</Subject>
     <Teacher>Носков А. А.</Teacher>
-    <ClassRoom>301</ClassRoom>
-  </Action>
-  <Action>
+    <Class>301</Class>
+  </SSubject>
+  <SSubject>
     <Time>18.11.2023.11.50.13.10</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Прогнозирование и планирование (зачёт)</Subject>
     <Teacher>Носков А. А.</Teacher>
-    <ClassRoom>301</ClassRoom>
-  </Action>
-  <Action>
+    <Class>301</Class>
+  </SSubject>
+  <SSubject>
     <Time>20.11.2023.11.50.14.40</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы государственной и муниципальной службы (п)</Subject>
     <Teacher>Лангинен А. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>20.11.2023.15.00.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>20.11.2023.15.0.17.50</Time>
     <Subject>Региональное управление и территориальное планирование (п)</Subject>
     <Teacher>Кальсина А. А.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>21.11.2023.15.00.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>21.11.2023.15.0.17.50</Time>
     <Subject>Исследование систем управления (п)</Subject>
     <Teacher>Мудров О. И.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>21.11.2023.18.00.19.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>21.11.2023.18.0.19.20</Time>
     <Subject>Документационное обеспечение и делопроизводство в государственном и муниципальном управлении (п)</Subject>
     <Teacher>Олесиюк О. С.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>21.11.2023.19.30.20.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Документационное обеспечение и делопроизводство в государственном и муниципальном управлении (зачёт)</Subject>
     <Teacher>Олесиюк О. С.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>22.11.2023.11.50.14.40</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы государственной и муниципальной службы (п)</Subject>
     <Teacher>Лангинен А. В.</Teacher>
-    <ClassRoom>105</ClassRoom>
-  </Action>
-  <Action>
-    <Time>22.11.2023.15.00.16.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105</Class>
+  </SSubject>
+  <SSubject>
+    <Time>22.11.2023.15.0.16.20</Time>
     <Subject>Исследование систем управления (п)</Subject>
     <Teacher>Мудров О. И.</Teacher>
-    <ClassRoom>301</ClassRoom>
-  </Action>
-  <Action>
+    <Class>301</Class>
+  </SSubject>
+  <SSubject>
     <Time>22.11.2023.16.30.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Исследование систем управления (зачёт)</Subject>
     <Teacher>Мудров О. И.</Teacher>
-    <ClassRoom>301</ClassRoom>
-  </Action>
-  <Action>
-    <Time>23.11.2023.15.00.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>301</Class>
+  </SSubject>
+  <SSubject>
+    <Time>23.11.2023.15.0.17.50</Time>
     <Subject>Региональное управление и территориальное планирование (п)</Subject>
     <Teacher>Кальсина А. А.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>23.11.2023.18.00.19.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>23.11.2023.18.0.19.20</Time>
     <Subject>Региональное управление и территориальное планирование (экзамен)</Subject>
     <Teacher>Кальсина А. А.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>24.11.2023.11.50.13.10</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы государственной и муниципальной службы (п)</Subject>
     <Teacher>Лангинен А. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>24.11.2023.13.20.14.40</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы государственной и муниципальной службы (защита курсовой работы)</Subject>
     <Teacher>Лангинен А. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>24.11.2023.15.00.16.20</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>24.11.2023.15.0.16.20</Time>
     <Subject>Основы государственной и муниципальной службы (экзамен)</Subject>
     <Teacher>Лангинен А. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>24.11.2023.16.30.17.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы национальной безопасности (п)</Subject>
     <Teacher>Бызова М. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>25.11.2023.8.30.9.50</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы национальной безопасности (л)</Subject>
     <Teacher>Бызова М. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>25.11.2023.10.00.13.10</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
+    <Time>25.11.2023.10.0.13.10</Time>
     <Subject>Основы национальной безопасности (п)</Subject>
     <Teacher>Бызова М. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
+    <Class>105а</Class>
+  </SSubject>
+  <SSubject>
     <Time>25.11.2023.13.20.14.40</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
     <Subject>Основы национальной безопасности (зачёт)</Subject>
     <Teacher>Бызова М. В.</Teacher>
-    <ClassRoom>105а</ClassRoom>
-  </Action>
-  <Action>
-    <Time>25.11.2023.</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
-    <Subject></Subject>
-    <Teacher></Teacher>
-    <ClassRoom></ClassRoom>
-  </Action>
+    <Class>105а</Class>
+  </SSubject>
 </root>

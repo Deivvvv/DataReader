@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using FileReader;
 
 namespace DataSpace
 {
@@ -70,9 +71,29 @@ namespace DataSpace
         }
         public int MainGroup;
         public List<TableData> Subjects;
-        public GroupData (string name)
+        public GroupData (int i,string name)
         {
             Name = name;
+            MainGroup = i;
+        }
+        public void SetTable(List<TableData> subjects)
+        {
+            Subjects = subjects;
+            List<TeacherList> teach = new List<TeacherList>();
+            for(int i = 0; i < subjects.Count; i++)
+            {
+                int b = Teachers.FindIndex(x => x.Name == subjects[i].Teacher);
+                if( b== -1)
+                {
+                    b = Teachers.Count;
+                    Teachers.Add(new TeacherList(subjects[i].Teacher, new int[0]));
+                }
+                int a = Teachers[b].Subjects.FindIndex(x => x == Subjects[i].Subject);
+                if(a == -1)
+                {
+                    Teachers[b].Subjects.Add(Subjects[i].Subject);
+                }
+            }
         }
     }
     class SubjectData: DataForm
@@ -83,7 +104,7 @@ namespace DataSpace
             Name = name;
         }
     }
-    class DataForm
+    public class DataForm
     {
         public string Name;
       
@@ -116,6 +137,22 @@ namespace DataSpace
         static List<SubjectData> subjects;
 
         //private static TableData cData;
+        public static void StartSystem()
+        {
+            units = Reader.LoadUnit();
+            classs = Reader.LoadClass();
+            subjects = Reader.LoadSubject();
+            teachers = Reader.LoadTeacher();
+
+            Reader.LoadGroup();
+            UnityEngine.Debug.Log(groups.Count);
+
+        }
+
+        public static void GroupSetTable(int a, int b,List<TableData> data)
+        {
+            groups[a].Groups[b].SetTable(data);
+        }
         public static void SetMainGroup(string[] com)
         {
             groups = new List<MainGroup>();
@@ -126,17 +163,30 @@ namespace DataSpace
         {
             groups[id].AddGroup(data);
         }
-        public static void ConnectData(TableData data) {  cData = data; }
-
-        public static void GroupSetTable(List<TableData> datas)
+       
+        public static void SaveGroup(int id,int i)
         {
-            GroupData group = groups[cData.Group];
-            group.Subjects = datas;
-            FileReader.Saver.SaveGroup( group);
+            Saver.SaveGroup(groups[id].Groups[i]);
         }
-        public static void SaveGroup(int i)
+
+        public static string GetNameGroup(int id, int i)
         {
-            FileReader.Saver.SaveGroup(groups[i]);
+            return groups[id].Groups[i].Name;
+
+        }
+        public static int FindIdGroup(int id,string name)
+        {
+            UnityEngine.Debug.Log(id);
+            UnityEngine.Debug.Log(name);
+            int k = groups[id].Groups.FindIndex(x => x.Name == name);
+            if (k == -1)
+            {
+                k = groups[id].Groups.Count;
+                groups[id].AddGroup(new GroupData(id,name));
+                groups[id].Groups[k].Teachers = new List<GroupData.TeacherList>();
+            }
+
+            return k;
         }
         public static string GetName(string tayp,int i)
         {
@@ -159,7 +209,7 @@ namespace DataSpace
                     return subjects[i].Name;
                     break;
                 case ("MainGroup"):
-                    return mainGroup[i];
+                    return groups[i].Name;
                     break;
 
             }
@@ -186,22 +236,27 @@ namespace DataSpace
                 case ("Subject"):
                     i = subjects.FindIndex(x => x.Name == name);
                     break;
-                case ("MainGroup"):
-                    i = mainGroup.FindIndex(x => x == name);
-                    break;
 
             }
+            UnityEngine.Debug.Log(scan);
             if (scan) 
             {
+                UnityEngine.Debug.Log(i);
                 if (i == -1)
                     switch (tayp)
                     {
+                        case ("Group"):
+                            i = groups.Count;
+                            groups.Add(new MainGroup(name));
+
+                            break;
+
                         case ("Class"):
                             {
                                 ClassData data = new ClassData(name);
                                 i = classs.Count;
 
-                                FileReader.Saver.SaveClass(data);
+                                Saver.SaveClass(data);
                                 classs.Add(data);
                             }
                             break;
@@ -209,7 +264,7 @@ namespace DataSpace
                             {
                                 TeacherData data = new TeacherData(name);
                                 i = teachers.Count;
-                                FileReader.Saver.SaveTeacher(data);
+                                Saver.SaveTeacher(data);
                                 teachers.Add(data);
                             }
                             break;
@@ -218,49 +273,49 @@ namespace DataSpace
                             //    UnitData data = new UnitData(name);
                             //}
                             break;
-                        case ("Group"):
-                            {
-                                GroupData data = new GroupData(name);
-                                i = groups.Count;
-                                FileReader.Saver.SaveGroup(data);
-                                groups.Add(data);
-                            }
-                            break;
+                        //case ("Group"):
+                        //    {
+                        //        GroupData data = new GroupData(name);
+                        //        i = groups.Count;
+                        //        FileReader.Saver.SaveGroup(data);
+                        //        groups.Add(data);
+                        //    }
+                        //    break;
                         case ("Subject"):
                             {
                                 SubjectData data = new SubjectData(name);
                                 i = subjects.Count;
-                                FileReader.Saver.SaveSubject(data);
+                                Saver.SaveSubject(data);
                                 subjects.Add(data);
                             }
                             break;
-                        case ("MainGroup"):
-                            i = mainGroup.Count;
-                            mainGroup.Add(name);
-                            break;
+                        //case ("MainGroup"):
+                        //    i = mainGroup.Count;
+                        //    mainGroup.Add(name);
+                        //    break;
                         default:
                             UnityEngine.Debug.Log(tayp);
                             break;
                     }
 
-                int j = 0;
-                switch (tayp)
-                {
-                    case ("Teacher"):
-                        //j = groups[cData.Group].Teachers.FindIndex(x => x.Name == i);
-                        //if(j == -1)
-                            groups[cData.Group].Teachers.Add(new GroupData.TeacherList(i, new int[0]));
-                        // cData.Teacher = i;
-                        break;
-                    case ("Class"):
-                       // groups[cData.Group].Teachers.Add(new GroupData.TeacherList(i, new int[0]));
-                       // cData.Teacher = i;
-                        break;
-                    case ("Subejct"):
-                        j = groups[cData.Group].Teachers.FindIndex(x => x.Name == cData.Teacher);
-                        groups[cData.Group].Teachers[j].AddSub(i);
-                        break;
-                }
+                //int j = 0;
+                //switch (tayp)
+                //{
+                //    case ("Teacher"):
+                //        //j = groups[cData.Group].Teachers.FindIndex(x => x.Name == i);
+                //        //if(j == -1)
+                //            groups[cData.Group].Teachers.Add(new GroupData.TeacherList(i, new int[0]));
+                //        // cData.Teacher = i;
+                //        break;
+                //    case ("Class"):
+                //       // groups[cData.Group].Teachers.Add(new GroupData.TeacherList(i, new int[0]));
+                //       // cData.Teacher = i;
+                //        break;
+                //    case ("Subejct"):
+                //        j = groups[cData.Group].Teachers.FindIndex(x => x.Name == cData.Teacher);
+                //        groups[cData.Group].Teachers[j].AddSub(i);
+                //        break;
+                //}
             }
 
 
@@ -311,6 +366,7 @@ namespace DataSpace
         public int ClassRoom;//класс
         public TableData(string str)
         {
+            UnityEngine.Debug.Log(str);
             int[] com = str.Split('.').Select(int.Parse).ToArray();
             Time = new int[7];//7 size
             for (int i = 0; i < com.Length; i++)

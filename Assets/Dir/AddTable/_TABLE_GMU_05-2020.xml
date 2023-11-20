@@ -399,12 +399,4 @@
     <Teacher>Бызова М. В.</Teacher>
     <ClassRoom>105а</ClassRoom>
   </Action>
-  <Action>
-    <Time>25.11.2023.</Time>
-    <StartTime>-</StartTime>
-    <EndTime>-</EndTime>
-    <Subject></Subject>
-    <Teacher></Teacher>
-    <ClassRoom></ClassRoom>
-  </Action>
 </root>
