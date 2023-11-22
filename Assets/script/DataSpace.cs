@@ -135,7 +135,8 @@ namespace DataSpace
         static List<ClassData> classs;
         static List<MainGroup> groups;
         static List<SubjectData> subjects;
-
+        private static int groupInt;
+        static List<TableData> sendData;
         //private static TableData cData;
         public static void StartSystem()
         {
@@ -145,10 +146,51 @@ namespace DataSpace
             teachers = Reader.LoadTeacher();
 
             Reader.LoadGroup();
-            UnityEngine.Debug.Log(groups.Count);
 
         }
+        public static string[] GetGroupList()
+        {
+            string[] com = new string[groups.Count];
+            for(int i = 0; i < groups.Count; i++)
+            {
+                com[i] = groups[i].Name;
+            }
+            return com;
+        }
+        public static string[] SwicthGroup(int xi)
+        {
+            groupInt = xi;
+            string[] com = new string[groups[xi].Groups.Count];
+            for (int i = 0; i < groups.Count; i++)
+            {
+                com[i] = groups[xi].Groups[i].Name;
+            }
+            return com;
 
+        }
+        public static List<TableData> GetDay() 
+        {
+           // List<TableData> tables = new List<TableData>();
+
+
+            return sendData;
+        }
+        public static void CreateDayTime()
+        {
+            string[] com = System.DateTime.Now.ToString().Split(' ');
+          //  int[] dt = com[0].Split('.').Select(int.Parse).ToArray();
+            sendData = new List<TableData>();
+            for(int i=0;i<groups.Count;i++)
+                for (int j = 0; j < groups[i].Groups.Count; j++)
+                    for (int k = 0; k < groups[i].Groups[j].Subjects.Count; k++)
+                    {
+                        TableData data = groups[i].Groups[j].Subjects[k];
+                       // if(data.Time[0] ==dt[0] && data.Time[1] == dt[1])
+                            sendData.Add(data);
+                    }
+
+        }
+        
         public static void GroupSetTable(int a, int b,List<TableData> data)
         {
             groups[a].Groups[b].SetTable(data);
@@ -238,10 +280,9 @@ namespace DataSpace
                     break;
 
             }
-            UnityEngine.Debug.Log(scan);
+
             if (scan) 
             {
-                UnityEngine.Debug.Log(i);
                 if (i == -1)
                     switch (tayp)
                     {
@@ -366,7 +407,6 @@ namespace DataSpace
         public int ClassRoom;//класс
         public TableData(string str)
         {
-            UnityEngine.Debug.Log(str);
             int[] com = str.Split('.').Select(int.Parse).ToArray();
             Time = new int[7];//7 size
             for (int i = 0; i < com.Length; i++)
@@ -377,7 +417,36 @@ namespace DataSpace
             //Group[0] = Storage.FindId("MainGroup", group);
             //Group = Storage.FindId("Group",group);
         }
+        public TableData(TableData data)
+        {
+            Time = data.Time;
 
+            StartTime = data.StartTime;
+            EndTime = data.EndTime;
+            Subject = data.Subject;
+            Teacher = data.Teacher;
+            ClassRoom = data.ClassRoom;
+        }
+
+        public string GetTime()
+        {
+            return $"{Time[0]}.{Time[1]}.{Time[2]}";
+        }
+        public string GetRealTime()
+        {
+            string str = "";
+            if (StartTime.Length > 0)
+            {
+                str = $"{StartTime[0]}:{StartTime[1]} - ";
+                if(EndTime.Length>0)
+                    str += $"{EndTime[0]}:{EndTime[1]} ";
+            }
+            else
+            {
+                str = $"{Time[3]}:{Time[4]} - {Time[5]}:{Time[6]}";
+            }
+            return str;
+        }
         public void SetTime(string str)
         {
             int[] com = str.Split('-').Select(int.Parse).ToArray();

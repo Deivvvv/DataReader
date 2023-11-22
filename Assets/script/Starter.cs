@@ -9,8 +9,10 @@ public class Starter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Application.targetFrameRate = 15;//Limit framerate to cinematic 24fps. Set vSyncCount to 0 so that using .targetFrameRate is enabled.
+        Application.targetFrameRate = 10;//Limit framerate to cinematic 24fps. Set vSyncCount to 0 so that using .targetFrameRate is enabled.
         Reader.Start();
+
+        gameObject.GetComponent<GuiScript>().LoadInfoWindow();
         Debug.Log("Сделать систему запоминаия последних 10 операций с функцией отката действий  по паролю администратора");
         Debug.Log("Прикреплять к файлам дату редактированяи и версию в которой изменяли данные");
         //target frame rate =15;

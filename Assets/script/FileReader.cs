@@ -193,6 +193,46 @@ namespace FileReader
             return datas;
         }
 
+        public static string[] GetYears()
+        {
+            string[] allfolders = Directory.GetDirectories($"{mainPath}Data/Year/");
+            string[] com = new string[ allfolders.Length];
+            for(int i=0;i < allfolders.Length; i++)
+            {
+                string[] com1 = allfolders[i].Split('/');
+
+                com[i] = com1[com1.Length - 1];
+            }
+
+            return com;
+        }
+        public static string[] GetMouths(string str1)
+        {
+            string[] allfolders = Directory.GetDirectories($"{mainPath}Data/Year/{str1}");
+            string[] com = new string[allfolders.Length];
+            for (int i = 0; i < allfolders.Length; i++)
+            {
+                string[] com1 = allfolders[i].Split('/');
+
+                com[i] = com1[com1.Length - 1];
+            }
+
+            return com;
+        }
+        public static string[] GetDays(string str1 , string str2)
+        {
+            string[] allfolders = Directory.GetFiles($"{mainPath}Data/Year/{str1}/{str2}/", "*.xml");//.xml
+            string[] com = new string[allfolders.Length];
+            for (int i = 0; i < allfolders.Length; i++)
+            {
+                string[] com1 = allfolders[i].Split('/');
+
+                com[i] = com1[com1.Length - 1];
+            }
+
+            return com;
+        }
+
         static void AddData()
         {
             int i = 0;
@@ -364,17 +404,10 @@ namespace FileReader
 
             group.Teachers = new List<GroupData.TeacherList>();
             nodes = root.DocumentElement.SelectNodes("descendant::TTeacher");
-            Debug.Log(nodes.Count);
-            int z = 0;
             foreach (XmlNode x in nodes)
             {
-                Debug.Log(z);
                 node = XElement.Load(new XmlNodeReader(x));
-                string str = node.Element("Text").Value;
-                Debug.Log($"{node.Element("Text").Value}");
-                string[] com = node.Element("Text").Value.Split('|');
-                Debug.Log(com.Length);
-                com = node.Element("Text").Value.Split('_');
+                string[] com = node.Element("Text").Value.Split('_');
                 int[] id = new int[com.Length - 1];
                 for (int i = 1; i < com.Length; i++)
                     id[i - 1] = AddsString(sSubject, "Subject", com[i]);
@@ -382,7 +415,6 @@ namespace FileReader
                 GroupData.TeacherList data = new GroupData.TeacherList(AddsString(sTeacher, "Teacher", com[0]), id);
 
                 group.Teachers.Add(data);
-                z++;
             }
 
             List<TableData> tData = new List<TableData>();
