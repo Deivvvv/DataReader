@@ -168,6 +168,22 @@ namespace DataSpace
             return com;
 
         }
+
+        public static List<TableData> GetAllTable()
+        {
+            UnityEngine.Debug.Log("!");
+            sendData = new List<TableData>();
+            for (int i = 0; i < groups.Count; i++)
+                for (int j = 0; j < groups[i].Groups.Count; j++)
+                    for (int k = 0; k < groups[i].Groups[j].Subjects.Count; k++)
+                    {
+                        TableData data = groups[i].Groups[j].Subjects[k];
+                        // if(data.Time[0] ==dt[0] && data.Time[1] == dt[1])
+                        sendData.Add(data);
+                    }
+            return sendData;
+        }
+
         public static List<TableData> GetDay() 
         {
            // List<TableData> tables = new List<TableData>();

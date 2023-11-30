@@ -1,0 +1,847 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>admin</Author>
+  <LastAuthor>admin</LastAuthor>
+  <Created>2023-11-30T04:37:43Z</Created>
+  <LastSaved>2023-11-30T04:48:01Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12330</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m1962716579104">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962716579124">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962716579144">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962716578688">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962716578708">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962716578728">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962716578748">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962716578768">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962716578788">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960769365424">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960769365444">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960769365464">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960769365484">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960769365504">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960769365524">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960765090464">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960765090484">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960765090504">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960765090524">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960765090544">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1960765090564">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s72">
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s83">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s98">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s102">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s103">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s131">
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s142">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s149">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s150">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s184">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s192">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s194">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s196">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Лист1">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="58" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s131" ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s72"/>
+   <Row ss:Height="77.25">
+    <Cell ss:MergeDown="1" ss:StyleID="m1960765090464"><Data ss:Type="DateTime">2023-12-05T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s192"><Data ss:Type="String">11.50-14.40</Data></Cell>
+    <Cell ss:StyleID="s194"><Data ss:Type="String">Государственное регулирование экономики (л)</Data></Cell>
+    <Cell ss:StyleID="s196"><Data ss:Type="String">К.э.н. Кариева Э. М.</Data></Cell>
+    <Cell ss:StyleID="s192"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Управление человеческими ресурсами (л)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.пс.н. Шабалин О. М.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="77.25">
+    <Cell ss:MergeDown="1" ss:StyleID="m1960765090484"><Data ss:Type="DateTime">2023-12-06T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">11.50-13.10</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Государственное регулирование экономики (л)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.э.н. Кариева Э. М.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">13.20-16.10</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Государственное регулирование экономики (п)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.э.н. Кариева Э. М.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="115.5">
+    <Cell ss:MergeDown="2" ss:StyleID="m1960765090504"><Data ss:Type="DateTime">2023-12-07T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">11.50-14.40</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String"> Финансовое планирование и бюджетирование организации (л)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.э.н. Емельянов А. М.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">15.00-16.10</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Управление человеческими ресурсами (л)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.пс.н. Шабалин О. М.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">16.20-19.10</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Управление человеческими ресурсами (п)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.пс.н. Шабалин О. М.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="128.25">
+    <Cell ss:MergeDown="1" ss:StyleID="m1960765090524"><Data ss:Type="DateTime">2023-12-08T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">11.50-14.40</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Государственное управление и государственная служба зарубежных стран (л)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="128.25">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Статистические методы на государственной и муниципальной службе (л)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.г.н. Николаев Р. С.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="128.25">
+    <Cell ss:MergeDown="1" ss:StyleID="m1960765090544"><Data ss:Type="DateTime">2023-12-09T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">10.00-11.20 </Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Статистические методы на государственной и муниципальной службе (л)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.г.н. Николаев Р. С.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="128.25">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">11.50-14.40</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Статистические методы на государственной и муниципальной службе (л)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.г.н. Николаев Р. С.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:MergeDown="2" ss:StyleID="m1960765090564"><Data ss:Type="DateTime">2023-12-11T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:MergeDown="1" ss:StyleID="m1960769365424"><Data ss:Type="DateTime">2023-12-12T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:MergeDown="1" ss:StyleID="m1960769365444"><Data ss:Type="DateTime">2023-12-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:MergeDown="1" ss:StyleID="m1960769365464"><Data ss:Type="DateTime">2023-12-14T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:MergeDown="2" ss:StyleID="m1960769365484"><Data ss:Type="DateTime">2023-12-15T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:MergeDown="1" ss:StyleID="m1960769365504"><Data ss:Type="DateTime">2023-12-16T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:MergeDown="2" ss:StyleID="m1960769365524"><Data ss:Type="DateTime">2023-12-18T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962716578688"><Data ss:Type="DateTime">2023-10-17T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:MergeDown="3" ss:StyleID="m1962716578708"><Data ss:Type="DateTime">2023-10-18T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s79"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s83"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">11.50-14.40</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Управление проектами (п)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.э.н. доц. Троценко В. М.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">201</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">15.00-16.20</Data></Cell>
+    <Cell ss:StyleID="s81"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Управление проектами </Font><B><Font
+        html:Color="#000000">(зачёт)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.э.н. доц. Троценко В. М.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">201</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962716578728"><Data ss:Type="DateTime">2023-10-19T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">13.30-14.50</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Ознакомительная практика (п)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.и.н. доц. Кальсина А. А.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">15.00-16.20</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Научно-исследовательская работа (л)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.э.н. Емельянов А. М.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">16.30-19.20</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Гражданское право (п)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.ю.н. доц. Мхитарян Л. Ю.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962716578748"><Data ss:Type="DateTime">2023-10-20T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Гражданское право (п)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.ю.н. доц. Мхитарян Л. Ю.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">18.00-19.20</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Гражданское право (к)</Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.ю.н. доц. Мхитарян Л. Ю.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">19.30-20.50</Data></Cell>
+    <Cell ss:StyleID="s81"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Гражданское право </Font><B><Font
+        html:Color="#000000">(экзамен)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s83"><Data ss:Type="String">К.ю.н. доц. Мхитарян Л. Ю.</Data></Cell>
+    <Cell ss:StyleID="s79"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962716578768"><Data ss:Type="DateTime">2023-10-21T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">11.50-14.40</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Конституционное право (п)</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">К.ю.н. доц. Степанов А. В.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s102"><Data ss:Type="String">15.00-16.20</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Конституционное право (к)</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">К.ю.н. доц. Степанов А. В.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s102"><Data ss:Type="String">16.30-17.50</Data></Cell>
+    <Cell ss:StyleID="s81"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Конституционное право </Font><B><Font
+        html:Color="#000000">(экзамен)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">К.ю.н. доц. Степанов А. В.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="141">
+    <Cell ss:MergeDown="1" ss:StyleID="m1962716578788"><Data ss:Type="DateTime">2023-10-23T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Государственная гражданская и муниципальная служба в Российской Федерации (п)</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s102"><Data ss:Type="String">18.00-20.50</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Трудовое право (п)</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">К.ю.н. доц. Кудрин А. С.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="141">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962716579104"><Data ss:Type="DateTime">2023-10-24T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Государственная гражданская и муниципальная служба в Российской Федерации (п)</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="141">
+    <Cell ss:Index="2" ss:StyleID="s102"><Data ss:Type="String">18.00-19.20</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Государственная гражданская и муниципальная служба в Российской Федерации (к)</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="153.75">
+    <Cell ss:Index="2" ss:StyleID="s102"><Data ss:Type="String">19.30-20.50</Data></Cell>
+    <Cell ss:StyleID="s81"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Государственная гражданская и муниципальная служба в Российской Федерации </Font><B><Font
+        html:Color="#000000">(экзамен)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:StyleID="s184"><Data ss:Type="DateTime">2023-10-25T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Этика государственной и муниципальной службы (л)</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Д.и.н. проф. Шестова Т. Ю.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:MergeDown="1" ss:StyleID="m1962716579124"><Data ss:Type="DateTime">2023-10-26T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">15.00-16.20</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Трудовое право (к)</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">К.ю.н. доц. Кудрин А. С.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="73.5">
+    <Cell ss:Index="2" ss:StyleID="s102"><Data ss:Type="String">16.30-17.50</Data></Cell>
+    <Cell ss:StyleID="s81"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Трудовое право </Font><B><Font
+        html:Color="#000000">(экзамен)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">К.ю.н. доц. Кудрин А. С.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:MergeDown="1" ss:StyleID="m1962716579144"><Data ss:Type="DateTime">2023-10-27T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">Этика государственной и муниципальной службы (п)</Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Д.и.н. проф. Шестова Т. Ю.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:Index="2" ss:StyleID="s102"><Data ss:Type="String">18.00-19.20</Data></Cell>
+    <Cell ss:StyleID="s81"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Этика государственной и муниципальной службы </Font><B><Font
+        html:Color="#000000">(зачёт)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s103"><Data ss:Type="String">Д.и.н. проф. Шестова Т. Ю.</Data></Cell>
+    <Cell ss:StyleID="s102"><Data ss:Type="Number">107</Data></Cell>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s184"/>
+    <Cell ss:StyleID="s102"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s103"/>
+    <Cell ss:StyleID="s102"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s98"/>
+    <Cell ss:StyleID="s102"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s103"/>
+    <Cell ss:StyleID="s102"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s184"/>
+    <Cell ss:StyleID="s102"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s103"/>
+    <Cell ss:StyleID="s102"/>
+   </Row>
+   <Row ss:Height="15.75">
+    <Cell ss:StyleID="s184"/>
+    <Cell ss:StyleID="s149"/>
+    <Cell ss:StyleID="s142"/>
+    <Cell ss:StyleID="s150"/>
+    <Cell ss:StyleID="s149"/>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+     <ActiveCol>8</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

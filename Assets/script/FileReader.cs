@@ -28,7 +28,7 @@ namespace FileReader
 
         public static void Start()
         {
-            string[] com = { "AddTable", "Data/Group", "Data/Unit", "Data/Class", "Data/Teacher" };
+            string[] com = { "AddTable", "Data/Group", "Data/Unit", "Data/Class", "Data/Teacher", "Data/Year" };
             foreach (string path in com)
                 if (!Directory.Exists($"{mainPath}{path}/"))
                     Directory.CreateDirectory($"{mainPath}{path}/");
@@ -193,45 +193,141 @@ namespace FileReader
             return datas;
         }
 
-        public static string[] GetYears()
+        public static List<int> GetYears()
         {
             string[] allfolders = Directory.GetDirectories($"{mainPath}Data/Year/");
-            string[] com = new string[ allfolders.Length];
+            List<int> com = new List<int>();
             for(int i=0;i < allfolders.Length; i++)
             {
                 string[] com1 = allfolders[i].Split('/');
-
-                com[i] = com1[com1.Length - 1];
+                com.Add(int.Parse(com1[com1.Length - 1]));
             }
 
             return com;
         }
-        public static string[] GetMouths(string str1)
+        public static List<int> GetMouths(int num)
         {
-            string[] allfolders = Directory.GetDirectories($"{mainPath}Data/Year/{str1}");
-            string[] com = new string[allfolders.Length];
+            List<int> com = new List<int>();
+            string path = $"{mainPath}Data/Year/{num}/";
+            if (!Directory.Exists(path))
+                return com;
+
+            string[] allfolders = Directory.GetDirectories(path);
             for (int i = 0; i < allfolders.Length; i++)
             {
                 string[] com1 = allfolders[i].Split('/');
 
-                com[i] = com1[com1.Length - 1];
+                com.Add(int.Parse(com1[com1.Length - 1]));
             }
 
             return com;
         }
-        public static string[] GetDays(string str1 , string str2)
+        public static List<int> GetDays(int num1, int num2)
         {
-            string[] allfolders = Directory.GetFiles($"{mainPath}Data/Year/{str1}/{str2}/", "*.xml");//.xml
-            string[] com = new string[allfolders.Length];
+            List<int> com = new List<int>();
+            string path = $"{mainPath}Data/Year/{num1}/";
+            if (!Directory.Exists(path))
+                return com;
+
+            path += $"{num2}/";
+            if (!Directory.Exists(path))
+                return com;
+
+            string[] allfolders = Directory.GetFiles(path, "*.xml");//.xml
             for (int i = 0; i < allfolders.Length; i++)
             {
                 string[] com1 = allfolders[i].Split('/');
 
-                com[i] = com1[com1.Length - 1];
+                com.Add(int.Parse(com1[com1.Length - 1]));
             }
 
             return com;
         }
+        public static void LoadTableGroup()
+        {
+            string[] com = Directory.GetFiles($"{mainPath}AddTable/Group/", "*.xml");//.xml
+            XmlDocument root = new XmlDocument();
+            XElement node;// = XDocument.Parse(File.ReadAllText(mainPath +"Roles.xml")).Element("root");
+            XmlNodeList nodes; // You can also use XPath here
+            XmlNodeList nodes1; // You can also use XPath here
+            XmlNodeList nodes2; // You can also use XPath here
+            foreach (string path in com)
+            {
+                root.Load(path);
+                string[] com1 = path.Split('_');
+                com1 = com1[1].Split('.');
+                int group = Storage.FindId("Group", com1[0]);
+                int groupName = Storage.FindIdGroup(group, com1[1]);
+                List<TableData> datas = new List<TableData>();
+                string dataTime = "";
+
+                Debug.Log(dataTime);
+                nodes = root.DocumentElement.SelectNodes("descendant::DocumentProperties"); // You can also use XPath here
+                Debug.Log(nodes.Count);
+                foreach (XmlNode x in nodes)
+                {
+
+                    // node = XElement.Load(new XmlNodeReader(x));
+
+                    Debug.Log(dataTime);
+                    nodes1 = x.SelectNodes("descendant::Row"); // You can also use XPath here
+                    foreach (XmlNode z in nodes)
+                    {
+                        int i = 0;
+                        TableData data = null;
+                        nodes2 = z.SelectNodes("descendant::Cell"); // You can also use XPath here
+                        if (nodes.Count == 5) {
+                            dataTime = XElement.Load(new XmlNodeReader(nodes2[0])).Element("Data").Value;
+                            i++;
+                        }
+                        Debug.Log(dataTime);
+                        data = new TableData(dataTime);
+                        //for (; i < nodes2.Count; i++)
+                        //{
+                        //    node = XElement.Load(new XmlNodeReader(nodes2[i]));
+                        //    node.Element("Data").Value
+                        //}
+                        datas.Add(data);
+                    }
+
+
+                    //    data.Subject = Storage.FindId("Subject", node.Element("Subject").Value);
+                    //data.Teacher = Storage.FindId("Teacher", node.Element("Teacher").Value);
+                    //data.ClassRoom = Storage.FindId("Class", node.Element("ClassRoom").Value);
+
+                    //datas.Add(data);
+                }
+
+
+               // Storage.GroupSetTable(group, groupName, datas);
+
+            }
+
+                //Worksheet
+                //Row
+                //Cell
+
+                //string[] com = Directory.GetFiles($"{mainPath}AddTable/", "*.xml");//.xml
+
+                //foreach (string path in com)
+                //{
+                //    Debug.Log(path);
+                //    string[] com1 = path.Split('_');//com[0] - путь до исходного файла // com[1+] |table|gmu|05-2023
+                //    string newPath = $"{mainPath}{com1[1]}/{com1[2]}/";
+                //    //com1 = com1[2].Split('.');
+                //    //newPath += com1[0];//$"{ com1[0]}/";
+                //    if (!Directory.Exists($"{newPath}"))
+                //        Directory.CreateDirectory($"{newPath}");
+                //    //File.Move(path,$"{newPath}{com1[3]}");
+                //}
+                //Debug.Log(com.Length);
+                //return (com.Length > 0);
+        }
+        static void LoadUnits()
+        {
+
+        }
+
 
         static void AddData()
         {
@@ -348,7 +444,8 @@ namespace FileReader
             for (int i = 0; i < com.Length; i++)
             {
                 com1 = allfolders[i].Split('/');
-                com[i] = com1[com1.Length - 2];
+                com[i] = com1[com1.Length - 1];
+                Debug.Log(com[i]);
             }
             Storage.SetMainGroup(com);
 
