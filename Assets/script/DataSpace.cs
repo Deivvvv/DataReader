@@ -15,24 +15,47 @@ namespace DataSpace
             Name = name;
         }
     }
-    class UnitData : DataForm
+    public class UnitData : DataForm
     {
-        public struct IdCase{
-            public string Id;
-            public int Tayp;
-            public IdCase(string str, int i)
+        public struct IdCase
+        {
+            public string BNum;//бух номер
+            public string INum;//инв. номер
+            public int Tayp;//тип инвентарника
+
+            public int Position;
+            public int User;
+            public int Status;
+            //public List<string> note;
+            public IdCase(string str1, string str2, int i)
             {
-                Id = str;
+                BNum = str1;
+                INum = str2;
                 Tayp = i;
+
+                Position = -1;
+                User = -1;
+                Status = -1;
+            }
+        }
+        public struct MainIdCase{
+            public string Name;
+            public List<IdCase> Units;
+            public MainIdCase(string str1)
+            {
+                Name = str1;
+                Units = new List<IdCase>();
+                //IdCase id = new IdCase()
             }
         }
 
         //фактическое оборудование
         //ClassData
-        List<IdCase> Ids;//оборудование такого типа
+        public List<MainIdCase> Ids;//оборудование такого типа
         public UnitData(string name)
         {
             Name = name;
+            Ids = new List<MainIdCase>();
         }
 
     }
@@ -141,6 +164,9 @@ namespace DataSpace
         public static void StartSystem()
         {
             units = Reader.LoadUnit();
+            List<UnitData> unitsDPO = Reader.LoadUnits();
+            for (int i = 0; i < unitsDPO.Count; i++)
+                units.Add(unitsDPO[i]);
             classs = Reader.LoadClass();
             subjects = Reader.LoadSubject();
             teachers = Reader.LoadTeacher();

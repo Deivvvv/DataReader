@@ -323,9 +323,50 @@ namespace FileReader
                 //Debug.Log(com.Length);
                 //return (com.Length > 0);
         }
-        static void LoadUnits()
-        {
 
+
+
+        public static List<UnitData> LoadUnits()
+        {
+            List<UnitData> units = new List<UnitData>();
+            string[] com = Directory.GetFiles($"{mainPath}AddTable/units/", "*.xml");//.xml
+            XmlDocument root = new XmlDocument();
+            XElement node;// = XDocument.Parse(File.ReadAllText(mainPath +"Roles.xml")).Element("root");
+            XmlNodeList nodes; // You can also use XPath here
+
+            foreach (string path in com)
+            {
+                root.Load(path);
+                nodes = root.DocumentElement.SelectNodes("descendant::TaypG"); // You can also use XPath here
+                foreach (XmlNode x in nodes)
+                {
+                    node = XElement.Load(new XmlNodeReader(x));
+                    UnitData uData = new UnitData(node.Element("Name").Value);
+
+
+                    XmlNodeList nodes1 = x.SelectNodes("descendant::Unit"); // You can also use XPath here
+                    foreach (XmlNode y in nodes1)
+                    {
+                        XElement node1 = XElement.Load(new XmlNodeReader(y));
+                        UnitData.MainIdCase uData1 = new UnitData.MainIdCase(node1.Element("Name").Value);
+
+                        XmlNodeList nodes2 = x.SelectNodes("descendant::Unit"); // You can also use XPath here
+                        foreach (XmlNode z in nodes2)
+                        {
+                            XElement node2 = XElement.Load(new XmlNodeReader(z));
+                            UnitData.IdCase uData2 = new UnitData.IdCase(
+                                node2.Element("BNum").Value,
+                                node2.Element("INum").Value,
+                                Storage.FindId("UnitTayp", node2.Element("Tayp").Value));
+                            uData1.Units.Add(uData2);
+                        }
+                        uData.Ids.Add(uData1);
+                    }
+                    units.Add(uData);
+                }
+            }
+
+            return units;
         }
 
 
