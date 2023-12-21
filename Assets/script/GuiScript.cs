@@ -34,24 +34,91 @@ public class GuiScript : MonoBehaviour
     //void Start()
     //{
     //    ui = gameObject.GetComponent<GuiSctiptUi>();
-    
+
     //}
+
+
+    bool[] unitTaypB;
+    int[] unitTaypS;
+    string[] unitTayp;
 
     public void LoadUnitScreen()
     {
         //загрузить список типов оборудования, добавить функцию выбора одной, нескольких групп для загрузки, общая сумма оборудования (заргузка спиков по нажатии кнокпи подвеждения, наличение кнопки(выбруть, убрать всё))
         //загружать список оборудования в формате, название - кол-во - тип
         // как развернутый - ид номер бухгалтерии - ид личный номер - статус оборудования(исправен/неисправен) - кабинет местонахождения доп:за кем закреплен - фотографии еденицы оборудования
-    
-    
-    
+
+        void SetButtonTayp(Button button, int i)
+        {
+            button.onClick.AddListener(() => SwitchUnitTayp(i));
+        }
+        unitTayp = Storage.GetUnitTayps();
+
+        unitTaypB = new bool[unitTayp.Length];
+       // for (int i = 0; i < unitTaypB.Length; i++)
+       //     unitTaypB[i] = true;
+        unitTaypS = Storage.GetUnitTaypsSize();
+
+        GameObject go;
+        for(int i =0; i< unitTayp.Length; i++)
+        {
+            go = GetButton();
+            go.transform.SetParent(ui.UnitWindowTayp);
+            SetButtonTayp(go.GetComponent<Button>(), i);
+            SwitchUnitTayp(i);
+        }
+
+        LoadUnit();
+    }
+    void OpenUnit(intM a)
+    {
+       UnitData.MainIdCase uCase = Storage.GetUnit(a);
+    }
+    void LoadUnit()
+    {
+        void SetButton(Button button, intM a)
+        {
+            button.onClick.RemoveAllListeners();
+            button.onClick.AddListener(() => OpenUnit(a));
+        }
+
+
+       // GameObject go;
+        List<intM> com = Storage.GetUnits(unitTaypB);
+        for (int i = com.Count; i < ui.UnitWindowTayp.childCount; i++)
+            ui.UnitWindowTayp.GetChild(i).SetParent(ui.UnitButtonStorage);
+
+        for (int i = ui.UnitWindow.childCount; i < com.Count; i++)
+            GetButton().transform.SetParent(ui.UnitWindow);
+
+        Transform tf;
+        for (int i = 0; i < com.Count; i++)
+        {
+            Debug.Log($"{i} {com.Count}");
+            tf = ui.UnitWindow.GetChild(i);
+
+            tf.GetChild(0).gameObject.GetComponent<Text>().text = Storage.GetUnitName(com[i]);
+            SetButton(tf.gameObject.GetComponent<Button>(),com[i]);
+        }
     }
 
+    void SwitchUnitTayp(int i)
+    {
+        void ViewUnitTayp(int i)
+        {
+            string str = "" +((unitTaypB[i]) ? "on" : "off") + $" {unitTayp[i]} ({unitTaypS[i]})";
+            ui.UnitWindowTayp.GetChild(i).GetChild(0).gameObject.GetComponent<Text>().text = str;
+        }
+        unitTaypB[i] = !unitTaypB[i];
+
+        ViewUnitTayp(i);
+    }
 
     public void LoadInfoWindow()
     {
         ui = gameObject.GetComponent<GuiSctiptUi>();
         Reader.LoadTableGroup();
+        LoadUnitScreen();
         return;
         //загружаем информацию о всех
      //   Storage.CreateDayTime();
@@ -62,8 +129,8 @@ public class GuiScript : MonoBehaviour
 
         LoadTimeWindow();
 
-        //OpenWindow("Year");
-        OpenWindow("Group");
+        OpenWindow("Year");
+        //OpenWindow("Group");
         SwitchGroup(0);
         //List<TableData> tables = Storage.GetDay();
         //GameObject go = null;

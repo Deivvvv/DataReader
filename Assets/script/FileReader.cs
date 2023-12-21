@@ -350,7 +350,7 @@ namespace FileReader
                         XElement node1 = XElement.Load(new XmlNodeReader(y));
                         UnitData.MainIdCase uData1 = new UnitData.MainIdCase(node1.Element("Name").Value);
 
-                        XmlNodeList nodes2 = x.SelectNodes("descendant::Unit"); // You can also use XPath here
+                        XmlNodeList nodes2 = x.SelectNodes("descendant::Units"); // You can also use XPath here
                         foreach (XmlNode z in nodes2)
                         {
                             XElement node2 = XElement.Load(new XmlNodeReader(z));

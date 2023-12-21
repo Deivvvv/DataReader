@@ -40,4 +40,10 @@ public class GuiSctiptUi : MonoBehaviour
     public Button DownYearLocal;
     public Button UpMonth;
     public Button DownMonth;
+
+    public GameObject UnitMainWindow;
+    public Transform UnitWindow;
+    public Transform UnitWindowTayp;
+    public GameObject UnitButton;
+    public Transform UnitButtonStorage;
 }

@@ -158,6 +158,7 @@ namespace DataSpace
         static List<ClassData> classs;
         static List<MainGroup> groups;
         static List<SubjectData> subjects;
+        static List<string> unitTayp = new List<string>();
         private static int groupInt;
         static List<TableData> sendData;
         //private static TableData cData;
@@ -167,6 +168,7 @@ namespace DataSpace
             List<UnitData> unitsDPO = Reader.LoadUnits();
             for (int i = 0; i < unitsDPO.Count; i++)
                 units.Add(unitsDPO[i]);
+
             classs = Reader.LoadClass();
             subjects = Reader.LoadSubject();
             teachers = Reader.LoadTeacher();
@@ -177,7 +179,7 @@ namespace DataSpace
         public static string[] GetGroupList()
         {
             string[] com = new string[groups.Count];
-            for(int i = 0; i < groups.Count; i++)
+            for (int i = 0; i < groups.Count; i++)
             {
                 com[i] = groups[i].Name;
             }
@@ -210,9 +212,9 @@ namespace DataSpace
             return sendData;
         }
 
-        public static List<TableData> GetDay() 
+        public static List<TableData> GetDay()
         {
-           // List<TableData> tables = new List<TableData>();
+            // List<TableData> tables = new List<TableData>();
 
 
             return sendData;
@@ -220,20 +222,20 @@ namespace DataSpace
         public static void CreateDayTime()
         {
             string[] com = System.DateTime.Now.ToString().Split(' ');
-          //  int[] dt = com[0].Split('.').Select(int.Parse).ToArray();
+            //  int[] dt = com[0].Split('.').Select(int.Parse).ToArray();
             sendData = new List<TableData>();
-            for(int i=0;i<groups.Count;i++)
+            for (int i = 0; i < groups.Count; i++)
                 for (int j = 0; j < groups[i].Groups.Count; j++)
                     for (int k = 0; k < groups[i].Groups[j].Subjects.Count; k++)
                     {
                         TableData data = groups[i].Groups[j].Subjects[k];
-                       // if(data.Time[0] ==dt[0] && data.Time[1] == dt[1])
-                            sendData.Add(data);
+                        // if(data.Time[0] ==dt[0] && data.Time[1] == dt[1])
+                        sendData.Add(data);
                     }
 
         }
-        
-        public static void GroupSetTable(int a, int b,List<TableData> data)
+
+        public static void GroupSetTable(int a, int b, List<TableData> data)
         {
             groups[a].Groups[b].SetTable(data);
         }
@@ -247,8 +249,8 @@ namespace DataSpace
         {
             groups[id].AddGroup(data);
         }
-       
-        public static void SaveGroup(int id,int i)
+
+        public static void SaveGroup(int id, int i)
         {
             Saver.SaveGroup(groups[id].Groups[i]);
         }
@@ -258,7 +260,7 @@ namespace DataSpace
             return groups[id].Groups[i].Name;
 
         }
-        public static int FindIdGroup(int id,string name)
+        public static int FindIdGroup(int id, string name)
         {
             UnityEngine.Debug.Log(id);
             UnityEngine.Debug.Log(name);
@@ -266,13 +268,13 @@ namespace DataSpace
             if (k == -1)
             {
                 k = groups[id].Groups.Count;
-                groups[id].AddGroup(new GroupData(id,name));
+                groups[id].AddGroup(new GroupData(id, name));
                 groups[id].Groups[k].Teachers = new List<GroupData.TeacherList>();
             }
 
             return k;
         }
-        public static string GetName(string tayp,int i)
+        public static string GetName(string tayp, int i)
         {
             string str = "";
             switch (tayp)
@@ -295,11 +297,19 @@ namespace DataSpace
                 case ("MainGroup"):
                     return groups[i].Name;
                     break;
-
+                case ("UnitTaypName"):
+                    return units[i].Name;
+                    break;
             }
 
             return str;
         }
+
+        public static string UnitName(int a, int b)
+        {
+            return units[a].Ids[b].Name;
+        }
+
         public static int FindId(string tayp, string name, bool scan = true)
         {
             int i = 0;
@@ -319,6 +329,9 @@ namespace DataSpace
                     break;
                 case ("Subject"):
                     i = subjects.FindIndex(x => x.Name == name);
+                    break;
+                case ("UnitTayp"):
+                    i = unitTayp.FindIndex(x => x == name);
                     break;
 
             }
@@ -351,10 +364,12 @@ namespace DataSpace
                                 teachers.Add(data);
                             }
                             break;
-                        case ("Unit"):
-                            //{
-                            //    UnitData data = new UnitData(name);
-                            //}
+
+                        case ("UnitTayp"):
+                            {
+                                i = unitTayp.Count;
+                                unitTayp.Add(name);
+                            }
                             break;
                         //case ("Group"):
                         //    {
@@ -380,31 +395,53 @@ namespace DataSpace
                             UnityEngine.Debug.Log(tayp);
                             break;
                     }
-
-                //int j = 0;
-                //switch (tayp)
-                //{
-                //    case ("Teacher"):
-                //        //j = groups[cData.Group].Teachers.FindIndex(x => x.Name == i);
-                //        //if(j == -1)
-                //            groups[cData.Group].Teachers.Add(new GroupData.TeacherList(i, new int[0]));
-                //        // cData.Teacher = i;
-                //        break;
-                //    case ("Class"):
-                //       // groups[cData.Group].Teachers.Add(new GroupData.TeacherList(i, new int[0]));
-                //       // cData.Teacher = i;
-                //        break;
-                //    case ("Subejct"):
-                //        j = groups[cData.Group].Teachers.FindIndex(x => x.Name == cData.Teacher);
-                //        groups[cData.Group].Teachers[j].AddSub(i);
-                //        break;
-                //}
             }
 
 
             return i;
         }
     
+        public static string GetUnitName(intM a)
+        {
+            return units[a.Min].Ids[a.Max].Name;
+        }
+        public static string[] GetUnitTayps()
+        {
+            string[] com = new string[units.Count];
+            for (int i = 0; i < units.Count; i++)
+                com[i] = units[i].Name;
+
+            return com;
+        }
+        public static int[] GetUnitTaypsSize()
+        {
+            int[] com = new int[units.Count];
+            for (int i = 0; i < units.Count; i++)
+            {
+                com[i] = 0;
+                for (int j = 0; j < units[i].Ids.Count; j++)
+                    com[i] += units[i].Ids[j].Units.Count;
+            }
+
+            return com;
+        }
+        public static UnitData.MainIdCase GetUnit(intM a)
+        {
+            return units[a.Min].Ids[a.Max];
+        }
+        public static List<intM> GetUnits(bool[] bu)
+        {
+
+            List<intM> com = new List<intM>();
+            for(int a =0;a < units.Count;a++)
+                if(bu[a])
+                    for (int b = 0; b < units[a].Ids.Count; b++)
+                    {
+                        com.Add(new intM(a, b));
+                    }
+
+            return com;
+        }
         //public static string GetData(string basa, int id)
         //{
 
