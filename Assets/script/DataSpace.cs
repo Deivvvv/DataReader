@@ -305,10 +305,10 @@ namespace DataSpace
             return str;
         }
 
-        public static string UnitName(int a, int b)
-        {
-            return units[a].Ids[b].Name;
-        }
+        //public static string UnitName(int a, int b)
+        //{
+        //    return units[a].Ids[b].Name;
+        //}
 
         public static int FindId(string tayp, string name, bool scan = true)
         {
@@ -418,9 +418,10 @@ namespace DataSpace
             int[] com = new int[units.Count];
             for (int i = 0; i < units.Count; i++)
             {
-                com[i] = 0;
-                for (int j = 0; j < units[i].Ids.Count; j++)
-                    com[i] += units[i].Ids[j].Units.Count;
+                com[i] = units[i].Ids.Count;
+                //com[i] = 0;
+                //for (int j = 0; j < units[i].Ids.Count; j++)
+                //    com[i] += units[i].Ids[j].Units.Count;
             }
 
             return com;
@@ -442,32 +443,33 @@ namespace DataSpace
 
             return com;
         }
-        //public static string GetData(string basa, int id)
-        //{
-
-        //    return " ";
-        //}
-        //public static int FindData(string basa, string name)
-        //{
-        //    switch (basa) 
-        //    {
-        //        case ("Unit"):
-        //            //для поиска техники но тут нужен алгоритм покруче
-        //            break;
-
-        //        case ("Subject"):
-        //            break;
-        //        case ("Teacher"):
-        //            break;
-        //        case ("ClassRoom"):
-        //            break;
-        //    }
+       
 
 
-        //    return -1;
-        //}
     }
 
+    public class UnitGroup
+    {
+        public string Name;
+        public List<int> Tag;
+        public List<string> IdNames;
+        public List<int> Ids;
+        public List<int> Statys;//статус оборудования, баланс, за баланс , 
+        public List<int> StatysUnit;//статус оборудования,в техническом плане
+        public bool Repair;//находится ли на ремонте
+
+    }
+    public class UnitManagers
+    {
+        /*
+         * unitGroup
+         * название гурппы
+         * tagGroup
+         * unit
+         * сначала создает предмет
+         * присваеваем ему тег
+         */
+    }
     public class TableData
     {
         //public int Day;

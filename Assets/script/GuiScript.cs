@@ -107,12 +107,47 @@ public class GuiScript : MonoBehaviour
         void ViewUnitTayp(int i)
         {
             string str = "" +((unitTaypB[i]) ? "on" : "off") + $" {unitTayp[i]} ({unitTaypS[i]})";
-            ui.UnitWindowTayp.GetChild(i).GetChild(0).gameObject.GetComponent<Text>().text = str;
+            GameObject go = ui.UnitWindowTayp.GetChild(i).GetChild(0).gameObject;
+            go.GetComponent<Text>().text = str;
+            ui.UnitWindowTayp.GetChild(i).GetComponent<Image>().color = (unitTaypB[i]) ? ui.GuiColor[1] : ui.GuiColor[0];
         }
         unitTaypB[i] = !unitTaypB[i];
 
         ViewUnitTayp(i);
     }
+    class GorupCase
+    {
+        public string Name;
+        List<int> Tags = new List<int>();
+
+    }
+
+    void GroupManager()
+    {
+        /*
+         за€вл€ем создание гурппы
+        в группе созадем списки, определ€€ тип, папка или элемент
+        кажда€ папка хранит теги, содежащихс€ в ней элементов
+         */
+   
+    }
+    /*
+     основные категории
+        календарь аренды
+        список преподавателей
+        список техники
+
+    в списке техникик
+    основные категории
+         комютеры
+            системные блоки
+            ноутбуки
+            неттопы
+            
+
+        
+
+     */
 
     public void LoadInfoWindow()
     {
