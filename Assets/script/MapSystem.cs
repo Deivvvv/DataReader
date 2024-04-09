@@ -7,33 +7,46 @@ using FileReader;
 
 public class MapSystem : MonoBehaviour
 {
+    public struct LevelRoom
+    {
+        public List<int> Id;
+    }
+
     private MapSystemUi ui;
     private List<Room> roomList;
+    private LevelRoom[] roomListLevels;
     private int idRoom = -1, localId;
+
+    string[] levelName = {"Все комнаты", "1 Этаж", "2 Этаж", "3 Этаж", "Мансардный этаж" };
+    int[] levels = new int[3];
 
     Vector3 vFix = new Vector3(0.5f, 0.5f, 0);
     Vector3 cellPosition, lookPosition, afterPosition;
     int lookPos = -1;
     float fixCof = 0.95f;
     public float speed = 0.95f;
-    public int[] zoom = new int[3];
+    int[] zoom = new int[3];
     int[] zoomMap = {10,18, 24,30,36, 45, 54 };
 
     bool editor, blok;
     void Start()
     {
+        ui = gameObject.GetComponent<MapSystemUi>();
         zoom[2] = zoomMap.Length-1;
+        levels[2] = levelName.Length-1;
+
+
         Application.targetFrameRate = 30;
         ui.Camera.gameObject.GetComponent<Camera>().orthographicSize = zoomMap[zoom[1]];
 
         GameObject go = null;
        // Reader.Start();
-        ui = gameObject.GetComponent<MapSystemUi>();
+
         ui.CreateRoomButton.onClick.AddListener(() => CreateRoom());
         ui.SaveButton.onClick.AddListener(() => SaveRooms());
         //ui. deliteroom
         // roomList = FileReader.LoadRoomsList();
-        roomList = Reader.LoadRooms();
+        roomList = Reader.LoadRooms(levelName.Length, gameObject.GetComponent<MapSystem>());
         if (roomList.Count == 0)
             CreateRoom();
         else
@@ -49,6 +62,7 @@ public class MapSystem : MonoBehaviour
                 go = Instantiate(ui.OrigText);
                 go.transform.SetParent(ui.TextStorage);
                 go.GetComponent<TextMesh>().text = roomList[i].Name;
+                go.transform.position = roomList[i].TextPosition;
             }
 
 
@@ -59,7 +73,32 @@ public class MapSystem : MonoBehaviour
         go = Instantiate(ui.OrigPoint);
         go.transform.SetParent(ui.PointStorage);
 
-        LoadRoomList();
+        SwitchLevel(1);
+       // LoadRoomList();
+    }
+    public void GetLevelList(LevelRoom[] rooms)
+    {
+        roomListLevels = rooms;
+    }
+    void SwitchLevel(int id)
+    {
+        List<int> rooms = null;
+        levels[1] = id;
+        ui.LevelText.text = levelName[id];
+        if (id == 0)
+        {
+            ui.CreateRoomButton.interactable = false;
+            rooms = new List<int>(new int[roomList.Count]);
+            for (int i = 0; i < roomList.Count; i++)
+                rooms[i] = i;
+
+        }
+        else
+        {
+            ui.CreateRoomButton.interactable = true;
+            rooms = roomListLevels[id].Id;
+        }
+        LoadRoomList(rooms);
     }
     void SaveRooms()
     {
@@ -75,7 +114,7 @@ public class MapSystem : MonoBehaviour
             }
 
         if(list.Count>0)
-            Saver.SaveRooms(list,id.ToArray());
+            Saver.SaveRooms(list,id.ToArray(), ui.WorldGrid);
     }
     //организация храниня map/level/room-dataroom
     public class Room
@@ -86,35 +125,6 @@ public class MapSystem : MonoBehaviour
         public Vector3 TextPosition;
         public int[] Border = new int[4];
         public bool Save;
-        // public List<Vector3Int> Positions;
-        //public List<int> TileIds;
-        //public List<int> UnitIds; //эффективнее представлять как отдельные кейсы, а не матрицу
-        //public List<int> UnitIds;
-
-        //public Room (string str, int i)
-        //{
-        //    Name = str;
-        //    Level = i;
-        //}
-    }
-    intM levels = new intM(1, 4);
-    int curentLevel = 1;
-    void SwitchLevel(bool up)
-    {
-        if (up)
-        {
-            if (curentLevel < levels.Max)
-                curentLevel++;
-        }
-        else
-            if (curentLevel > levels.Min)
-            curentLevel--;
-
-        ViewLevel();
-    }
-    void ViewLevel()
-    {
-
     }
 
 
@@ -127,37 +137,79 @@ public class MapSystem : MonoBehaviour
 
         if (trans)
         {
-            int[] i = roomList[id].Border;
-            ui.Camera.position = new Vector3(lerpF(i[0], i[2]), lerpF(i[1], i[3]), -10);
+            //int[] i = roomList[id].Border;
+            ui.Camera.position = new Vector3(roomList[id].TextPosition[0], roomList[id].TextPosition[1], -10);
+            if(localId !=-1)
+            {
+                ui.Lines[localId].positionCount = 0;
+            }
+            
+            localId = id;
+
         }
         ui.NameFlied.text = roomList[id].Name;
 
         ViewLine(ui.Lines[id], roomList[id].Lines, id);
     }
-    void AddRoomBotton(int id)
+
+    void AddRoomBotton(int id, int i)
     {
         void SetButton(Button button, int i)
         {
             button.onClick.AddListener(() => OpenRoom(i));
         }
-        GameObject go = GetButton(ui.RoomList);
+        GameObject go = ui.RoomList.GetChild(i).gameObject;//GetButton(ui.RoomList);
         go.transform.GetChild(0).gameObject.GetComponent<Text>().text = roomList[id].Name;
 
         SetButton(go.GetComponent<Button>(), id);
 
-        go.AddComponent<ViewRoomSctipt>();
+        if (go.GetComponent<ViewRoomSctipt>() == null)
+            go.AddComponent<ViewRoomSctipt>();
         go.GetComponent<ViewRoomSctipt>().SetId(id);
 
     }
-
-    void LoadRoomList()
+    void LoadRoomList(List<int> rooms)
     {
-        for(int i = 0; i < roomList.Count; i++)
-        {
-            AddRoomBotton(i);
+       
 
-            ViewRoom(i);
+        for (int i =0;i< ui.RoomList.childCount; i++)
+        {
+            ui.RoomList.GetChild(i).gameObject.GetComponent<Button>().onClick.RemoveAllListeners();
         }
+
+        for (int i = ui.RoomList.childCount; i < rooms.Count; i++)
+        {
+            GetButton(ui.RoomList);
+        }
+
+        int size = ui.RoomList.childCount;
+        for (int i = rooms.Count; i < size; i++)
+        {
+            Transform trans = ui.RoomList.GetChild(0);
+            Destroy(trans.gameObject.GetComponent<ViewRoomSctipt>());
+            trans.SetParent(ui.ButtonStorage);
+        }
+
+        for (int i = 0; i < rooms.Count; i++)
+        {
+            AddRoomBotton(rooms[i], i);
+        }
+
+        if (levels[1] == 0)
+        {
+
+            for (int i = 0; i < rooms.Count; i++)
+                ui.Lines[i].positionCount = 0;
+
+
+            for (int i = 0; i < ui.PointStorage.childCount; i++)
+                ui.PointStorage.GetChild(i).gameObject.SetActive(false);
+
+            //ClearRoom();
+        }
+        else
+            for (int i = 0; i < rooms.Count; i++)
+                ViewRoom(rooms[i]);
     }
 
     public  void LoadKey(bool use)   {  blok = use;   }
@@ -361,8 +413,8 @@ public class MapSystem : MonoBehaviour
                 if (cof[3] < y)
                     cof[3] = y;
             }
-            Vector3 vc = new Vector3(lerpF(cof[0],cof[2]), lerpF(cof[1], cof[3]), 0);// Lerp(new Vector3(cof[0], cof[1], 0), new Vector3(cof[2], cof[3], 0), 0.5f);
-            ui.TextStorage.GetChild(id).position = vc;
+            //Vector3 vc = new Vector3(lerpF(cof[0],cof[2]), lerpF(cof[1], cof[3]), 0);// Lerp(new Vector3(cof[0], cof[1], 0), new Vector3(cof[2], cof[3], 0), 0.5f);
+            ui.TextStorage.GetChild(id).position =  roomList[id].TextPosition ;
             for (int i = 0; i < v.Count; i++)
                 v1[i] = v[i];// Lerp(v[i], vc, fixCof);
             v1[v.Count] = v[0];//замыкаем линию
@@ -401,7 +453,7 @@ public class MapSystem : MonoBehaviour
         room.Lines = new List<Vector3>();
         room.OldName = room.Name = "Room" +roomList.Count;
         ui.NameFlied.text = room.Name;
-        room.Level = curentLevel;
+        room.Level = levels[1];
         room.Save =true;
 
         GameObject go = Instantiate(ui.OrigLine);
@@ -415,8 +467,7 @@ public class MapSystem : MonoBehaviour
 
 
         roomList.Add(room);
-
-        AddRoomBotton(idRoom);
+        roomListLevels[room.Level].Id.Add(idRoom);
         OpenRoom(idRoom);
 
         editor = true;
@@ -448,10 +499,13 @@ public class MapSystem : MonoBehaviour
     }
     void OpenRoom(int id)
     {
-        Debug.Log(id);
+        //Debug.Log(id);
         ui.RoomListWindow.SetActive(false);
         idRoom = id;
+
+        SwitchLevel(roomList[id].Level);
         ui.NameFlied.interactable = true;
+        ui.NameFlied.text = roomList[id].Name;
         ViewLine(ui.Lines[id], roomList[id].Lines, id);
         LoadButton("Room");
       //  ui.Camera.position = new Vector3();
@@ -461,7 +515,17 @@ public class MapSystem : MonoBehaviour
     }
     void ClosedRoom()
     {
-        Debug.Log(idRoom);
+        if (roomList[idRoom].Name != roomList[idRoom].OldName)
+        {
+            Debug.Log($"{roomList[idRoom].Name} != {roomList[idRoom].OldName}");
+            int id = roomList.FindIndex(x => x.Name == ui.NameFlied.text);
+            if (id != -1 && id != idRoom)
+            {
+                Debug.Log("CopyName");
+                return;
+            }
+        }
+
         roomList[idRoom].Name = ui.NameFlied.text;
         ui.TextStorage.GetChild(idRoom).gameObject.GetComponent<TextMesh>().text = roomList[idRoom].Name;
         ui.RoomList.GetChild(idRoom).GetChild(0).gameObject.GetComponent<Text>().text = roomList[idRoom].Name;
@@ -679,17 +743,27 @@ public class MapSystem : MonoBehaviour
     {
         if (idRoom == -1)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && levels[0] !=0)
             {
                 if(localId != -1 && !blok)
                     OpenRoom(localId);
                 // EditMatrix(true, curentPoint);
             }
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.Q))
             {
-                if (localId != -1 && !blok)
-                    OpenRoom(localId);
-                // EditMatrix(true, curentPoint);
+                if (levels[1] < levels[2])
+                {
+                    levels[1]++; 
+                    SwitchLevel(levels[1]);
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                if (levels[0] < levels[1])
+                {
+                    levels[1]--;
+                    SwitchLevel(levels[1]);
+                }
             }
         }
         else
@@ -815,6 +889,7 @@ public class MapSystem : MonoBehaviour
 
         if (idRoom == -1 || editor)
         {
+           // if(Input.GetMouseButton(0))
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
 

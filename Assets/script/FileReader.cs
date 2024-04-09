@@ -607,27 +607,20 @@ namespace FileReader
         //    //string[] origData = textassetData.text.Split
         //}
 
-        public static List<MapSystem.Room> LoadRooms()
+        public static List<MapSystem.Room> LoadRooms(int size, MapSystem map)
         {
             Vector3 ConvertVector(string str)
             {
                 string[] com = str.Split(':');
                 return new Vector3(int.Parse(com[0]), int.Parse(com[1]), 0);
             }
-
+            MapSystem.LevelRoom[] roomList = new MapSystem.LevelRoom[size];
+            for (int i = 0; i < size; i++)
+                roomList[i].Id = new List<int>();
             List<MapSystem.Room> rooms = new List<MapSystem.Room>();
 
-            string[] allFile = Directory.GetFiles($"{mainPath}Data/Room/", "*.xml");
-           // string[] com = new string[allfolders.Length];
-            //Debug.Log(com.Length);
-            //for (int i = 0; i < com.Length; i++)
-            //{
-            //    com1 = allfolders[i].Split('/');
-            //    com[i] = com1[com1.Length - 1];
-            //   // Debug.Log(com[i]);
-            //}
 
-          //  string path = $"{mainPath}Data/Room/";
+            string[] allFile = Directory.GetFiles($"{mainPath}Data/Room/", "*.xml");
 
 
             XmlDocument root = new XmlDocument();
@@ -635,12 +628,13 @@ namespace FileReader
             {
                 string path = allFile[i];// $"{mainPath}Data/Room/{allFile[i]}.xml";
                 //  root.Load(path);//(mainPath + "Charter.xml");
-                Debug.Log(path);
+                //Debug.Log(path);
                 XElement node =  XDocument.Parse(File.ReadAllText(path)).Element("root");
 
                 MapSystem.Room room = new MapSystem.Room();
-                room.Name = node.Element("Name").Value;
+                room.OldName = room.Name = node.Element("Name").Value;
                 room.Level = int.Parse(node.Element("Level").Value);
+                roomList[room.Level].Id.Add(i);
                 //room.Border = node.Element("Border").Value.Split(':').Select(int.Parse).ToArray();
 
                 string[] com1 = node.Element("Line").Value.Split('.');
@@ -650,25 +644,30 @@ namespace FileReader
                     room.Lines[j] = ConvertVector(com1[j]);
                 }
 
-                int[] id = node.Element("textPos").Value.Split(':').Select(int.Parse).ToArray();
+               // com1 = node.Element("TextPos").Value.Split(':');
+                int[] id = node.Element("TextPos").Value.Split(':').Select(int.Parse).ToArray();
 
-                room.TextPosition =new Vector3()
+                room.TextPosition = new Vector3(id[0], id[1], id[2]);
+
+                //com1 = node.Element("WorkStation").Value.Split('.');
 
                 rooms.Add(room);
             }
-        
+
+            map.GetLevelList(roomList);
+
             //XmlNodeList nodes = root.DocumentElement.SelectNodes("descendant::Room"); // You can also use XPath here
             //foreach (XmlNode x in nodes)
             //{
-         //       node = XElement.Load(new XmlNodeReader(x));
-         //       data = new TableData(node.Element("Time").Value, com[0]);
-         //       data.SetRealTime(node.Element("StartTime").Value, true);
-         //       data.SetRealTime(node.Element("EndTime").Value, false);
-         //       Storage.ConnectData(data);
-         //       data.Subject = Storage.FindId("Subject", node.Element("Subject").Value);
-         //       data.Teacher = Storage.FindId("Teacher", node.Element("Teacher").Value);
-         //       data.ClassRoom = Storage.FindId("Class", node.Element("Class").Value);
-         ////   }
+            //       node = XElement.Load(new XmlNodeReader(x));
+            //       data = new TableData(node.Element("Time").Value, com[0]);
+            //       data.SetRealTime(node.Element("StartTime").Value, true);
+            //       data.SetRealTime(node.Element("EndTime").Value, false);
+            //       Storage.ConnectData(data);
+            //       data.Subject = Storage.FindId("Subject", node.Element("Subject").Value);
+            //       data.Teacher = Storage.FindId("Teacher", node.Element("Teacher").Value);
+            //       data.ClassRoom = Storage.FindId("Class", node.Element("Class").Value);
+            ////   }
 
 
             //string GetStrVector(Vector3 v)
@@ -795,7 +794,7 @@ namespace FileReader
             XDocument saveDoc = new XDocument(root);
             File.WriteAllText($"{mainPath}Data/Subject/{data.Name}.xml", saveDoc.ToString());
         }
-        public static void SaveRooms(List<MapSystem.Room> rooms, int[] id)
+        public static void SaveRooms(List<MapSystem.Room> rooms, int[] id, GridLayout worldGrid)
         {
             string GetStrVector(Vector3 v)
             {
@@ -810,7 +809,7 @@ namespace FileReader
                 MapSystem.Room room = rooms[i];
                 if(room.Name != room.OldName)
                 {
-                    File.Delete($"{path}{room.Level}_{room.OldName}.xml");
+                    File.Delete($"{path}{room.OldName}.xml");
                     room.OldName = room.Name;
                 }
 
@@ -818,7 +817,9 @@ namespace FileReader
                 string str = "";// $"{room.Border[0]}:{room.Border[1]}:{room.Border[2]}:{room.Border[3]}";
                 root.Add(new XElement("Name", room.Name));
                 root.Add(new XElement("Level", room.Level));
-                root.Add(new XElement("TextPos", room.TextPosition));
+                Vector3Int v = worldGrid.WorldToCell(room.TextPosition);
+                str = $"{v[0]}:{v[1]}:{v[2]}";
+                root.Add(new XElement("TextPos", str));
                 //root.Add(new XElement("Border", str));
 
                 str = GetStrVector(room.Lines[0]);
@@ -829,9 +830,12 @@ namespace FileReader
 
                 root.Add(new XElement("Line", str));
 
+
+                root.Add(new XElement("WorkStation", " "));
+
                 Debug.Log(room.Name);
                 XDocument saveDoc = new XDocument(root);
-                File.WriteAllText($"{path}{room.Level}_{room.Name}.xml", saveDoc.ToString());
+                File.WriteAllText($"{path}{room.Name}.xml", saveDoc.ToString());
             }
         }
     }
