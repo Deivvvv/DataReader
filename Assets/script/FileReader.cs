@@ -628,6 +628,7 @@ namespace FileReader
             }
             List<MapSystem.Room> rooms = new List<MapSystem.Room>();
             MapSystem.LevelRoom[] roomList = new MapSystem.LevelRoom[size.Count];
+            
             for (int j = 1; j < size.Count; j++)
             {
                 roomList[j].Id = new List<int>();
@@ -645,7 +646,7 @@ namespace FileReader
                     MapSystem.Room room = new MapSystem.Room();
                     room.OldName = room.Name = node.Element("Name").Value;
                     room.Level = j;
-                    roomList[room.Level].Id.Add(i);
+                    roomList[room.Level].Id.Add(rooms.Count);
                     //room.Border = node.Element("Border").Value.Split(':').Select(int.Parse).ToArray();
 
                     string[] com1 = node.Element("Line").Value.Split('.');

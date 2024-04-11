@@ -35,6 +35,7 @@ public class MapSystem : MonoBehaviour
         zoom[2] = zoomMap.Length-1;
         levelName = Reader.LoadLevels();
         levels[2] = levelName.Count-1;
+        levels[1] = 1;
 
 
         Application.targetFrameRate = 30;
@@ -223,8 +224,11 @@ public class MapSystem : MonoBehaviour
         }
 
         for (int i = 0; i < roomList.Count; i++)
+        {
             //ui.Lines[i].gameObject.SetActive(false);  //
             ui.Lines[i].positionCount = 0;
+            ui.TextStorage.GetChild(i).gameObject.SetActive(false);
+        }
 
         if (levels[1] == 0)
         {
@@ -237,7 +241,8 @@ public class MapSystem : MonoBehaviour
         else
             for (int i = 0; i < rooms.Count; i++)
             {
-               // ui.Lines[rooms[i]].gameObject.SetActive(true);
+                ui.TextStorage.GetChild(rooms[i]).gameObject.SetActive(true);
+                // ui.Lines[rooms[i]].gameObject.SetActive(true);
                 ui.Lines[rooms[i]].positionCount = roomList[rooms[i]].Lines.Count;
                   ViewRoom(rooms[i]);
             }
@@ -550,6 +555,10 @@ public class MapSystem : MonoBehaviour
 
 
         roomList.Add(room);
+        Debug.Log(room.Level);
+        Debug.Log(idRoom);
+        Debug.Log(roomListLevels.Count);
+        Debug.Log(roomListLevels[room.Level].Id);
         roomListLevels[room.Level].Id.Add(idRoom);
         OpenRoom(idRoom);
 
@@ -612,7 +621,8 @@ public class MapSystem : MonoBehaviour
 
         roomList[idRoom].Name = ui.NameFlied.text;
         ui.TextStorage.GetChild(idRoom).gameObject.GetComponent<TextMesh>().text = roomList[idRoom].Name;
-        ui.RoomList.GetChild(idRoom).GetChild(0).gameObject.GetComponent<Text>().text = roomList[idRoom].Name;
+        int idx = roomListLevels[levels[1]].Id.FindIndex(x => x == idRoom);
+        ui.RoomList.GetChild(idx).GetChild(0).gameObject.GetComponent<Text>().text = roomList[idRoom].Name;
         roomList[idRoom].Save = true;
 
         ui.NameFlied.interactable = false;
@@ -849,10 +859,10 @@ public class MapSystem : MonoBehaviour
                     SwitchLevel(levels[1]);
                 }
             }
-            if (Input.GetKeyDown(KeyCode.N))
-            {
-                OpenAddLevelWindow();
-            }
+            //if (Input.GetKeyDown(KeyCode.N))
+            //{
+            //    OpenAddLevelWindow();
+            //}
         }
         else
         {
