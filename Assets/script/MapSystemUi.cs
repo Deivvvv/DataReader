@@ -8,6 +8,7 @@ public class MapSystemUi : MonoBehaviour
 {
     public Transform Camera;
     public InputField NameFlied;
+    public InputField RoomName;
     public Text LevelText;
 
     public GameObject OrigText;
@@ -32,4 +33,5 @@ public class MapSystemUi : MonoBehaviour
     public Button SaveButton;
 
     public GameObject RoomListWindow;
+    public GameObject AddLevelWindow;
 }

@@ -14,10 +14,10 @@ public class MapSystem : MonoBehaviour
 
     private MapSystemUi ui;
     private List<Room> roomList;
-    private LevelRoom[] roomListLevels;
+    private List<LevelRoom> roomListLevels;
     private int idRoom = -1, localId;
 
-    string[] levelName = {"Все комнаты", "1 Этаж", "2 Этаж", "3 Этаж", "Мансардный этаж" };
+    List<string> levelName;// = {"Все комнаты", "1 Этаж", "2 Этаж", "3 Этаж", "Мансардный этаж"};
     int[] levels = new int[3];
 
     Vector3 vFix = new Vector3(0.5f, 0.5f, 0);
@@ -33,7 +33,8 @@ public class MapSystem : MonoBehaviour
     {
         ui = gameObject.GetComponent<MapSystemUi>();
         zoom[2] = zoomMap.Length-1;
-        levels[2] = levelName.Length-1;
+        levelName = Reader.LoadLevels();
+        levels[2] = levelName.Count-1;
 
 
         Application.targetFrameRate = 30;
@@ -44,9 +45,17 @@ public class MapSystem : MonoBehaviour
 
         ui.CreateRoomButton.onClick.AddListener(() => CreateRoom());
         ui.SaveButton.onClick.AddListener(() => SaveRooms());
+
+        void ClosedAddLevel()
+        {
+            blok = false;
+            ui.AddLevelWindow.SetActive(false);
+        }
+        ui.AddLevelWindow.transform.GetChild(0).gameObject.GetComponent<Button>().onClick.AddListener(() => AddLevel());
+        ui.AddLevelWindow.transform.GetChild(1).gameObject.GetComponent<Button>().onClick.AddListener(() => ClosedAddLevel());
         //ui. deliteroom
         // roomList = FileReader.LoadRoomsList();
-        roomList = Reader.LoadRooms(levelName.Length, gameObject.GetComponent<MapSystem>());
+        roomList = Reader.LoadRooms(levelName, gameObject.GetComponent<MapSystem>());
         if (roomList.Count == 0)
             CreateRoom();
         else
@@ -76,9 +85,27 @@ public class MapSystem : MonoBehaviour
         SwitchLevel(1);
        // LoadRoomList();
     }
+
+    void OpenAddLevelWindow()
+    {
+        blok = true;
+        ui.AddLevelWindow.SetActive(true);
+    }
+    void AddLevel()
+    {
+        levelName.Add(ui.RoomName.text);
+        LevelRoom room = new LevelRoom();
+        room.Id = new List<int>();
+        roomListLevels.Add(room);
+        levels[2] = roomListLevels.Count - 1;
+
+        blok = false;
+        ui.AddLevelWindow.SetActive(false);
+    }
+
     public void GetLevelList(LevelRoom[] rooms)
     {
-        roomListLevels = rooms;
+        roomListLevels = new List<LevelRoom>(rooms);
     }
     void SwitchLevel(int id)
     {
@@ -114,7 +141,7 @@ public class MapSystem : MonoBehaviour
             }
 
         if(list.Count>0)
-            Saver.SaveRooms(list,id.ToArray(), ui.WorldGrid);
+            Saver.SaveRooms(list,id.ToArray(), ui.WorldGrid, levelName);
     }
     //организация храниня map/level/room-dataroom
     public class Room
@@ -195,12 +222,12 @@ public class MapSystem : MonoBehaviour
             AddRoomBotton(rooms[i], i);
         }
 
+        for (int i = 0; i < roomList.Count; i++)
+            //ui.Lines[i].gameObject.SetActive(false);  //
+            ui.Lines[i].positionCount = 0;
+
         if (levels[1] == 0)
         {
-
-            for (int i = 0; i < rooms.Count; i++)
-                ui.Lines[i].positionCount = 0;
-
 
             for (int i = 0; i < ui.PointStorage.childCount; i++)
                 ui.PointStorage.GetChild(i).gameObject.SetActive(false);
@@ -209,7 +236,11 @@ public class MapSystem : MonoBehaviour
         }
         else
             for (int i = 0; i < rooms.Count; i++)
-                ViewRoom(rooms[i]);
+            {
+               // ui.Lines[rooms[i]].gameObject.SetActive(true);
+                ui.Lines[rooms[i]].positionCount = roomList[rooms[i]].Lines.Count;
+                  ViewRoom(rooms[i]);
+            }
     }
 
     public  void LoadKey(bool use)   {  blok = use;   }
@@ -322,20 +353,68 @@ public class MapSystem : MonoBehaviour
     {
         bool ScanLine(Vector3 v1, Vector3 v2, Vector3 v3)
         {
-            if(v1[0] >v2[0])
+            //int[] cof = new int[5];
+            //cof[0] = Mathf.RoundToInt(v1[0]);
+            //cof[1] = Mathf.RoundToInt(v2[0]);
+            //cof[2] = Mathf.RoundToInt(v1[1]);
+            //cof[3] = Mathf.RoundToInt(v2[1]);
 
-            if (v3[0]> v1[0] &&
-             v3[0] > v1[1] &&
-            v3[0] > v2[0] &&
-             v3[0] > v2[1]
-             )
-            {
 
-            }
-                //float cof = 0.2f;
-                //return ((v1[0]-cof) < v3[0]||
-                //    (v1[0] - cof) > v3[0]
-                //    )
+            //bool plusX = (cof[0] < cof[2]);
+            //bool plusY = (cof[1] < cof[3]);
+
+
+            //if (plusX)
+            //{
+            //    if (v3[0] < cof[0] || v3[0] > cof[1])
+            //        return false;
+            //}
+            //else
+            //{
+            //    if (v3[0] < cof[1] || v3[0] > cof[0])
+            //        return false;
+            //}
+
+            //if (v3[0] < v1[0] ||
+            // v3[0] > v2[0] &&
+            //v3[0] < v2[0] &&
+            // v3[0] > v2[1]
+            // )
+            //{
+
+            //}
+
+
+            //int sizeX = (plusX) ? Mathf.RoundToInt(lerpF(cof[0], cof[2])) : cof[3] - cof[1];
+            //int sizeY = plusY) ? cof[0] - cof[2] : cof[2] - cof[0];
+
+            //bool vertical = Mathf.RoundToInt(lerpF(cof[0], cof[2]) > Mathf.RoundToInt(lerpF(cof[1], cof[3])));
+            //int size = 0;
+
+            //sizeX = (cof[1] > cof[3]) ? cof[1] - cof[3] : cof[3] - cof[1];
+            //sizeY = (cof[0] > cof[2]) ? cof[0] - cof[2] : cof[2] - cof[0];
+
+            //for (int i = 0; i < size; i++)
+            //{
+            //    if (vertical)
+            //    {
+            //        cof[5] = cof[0]
+            //    }
+
+            //}
+
+            //if (v3[0]>= v1[0] &&
+            // v3[0] >= v1[1] &&
+            //v3[0] <= v2[0] &&
+            // v3[0] <= v2[1]
+            // )
+            //{
+
+            //}
+            //    //float cof = 0.2f;
+            //    //return ((v1[0]-cof) < v3[0]||
+            //    //    (v1[0] - cof) > v3[0]
+            //    //    )
 
 
                 return true;
@@ -385,24 +464,28 @@ public class MapSystem : MonoBehaviour
     {
         return (start + percent * (end - start));
     }
-    void ViewLine(LineRenderer line, List<Vector3> v, int id)
+    void ViewLine(LineRenderer line, List<Vector3> v, int id, bool edit = false)
     {
         if (v.Count == 0)
             return;
 
 
         int[] cof = new int[4];
-        cof[0] = cof[2] = Mathf.CeilToInt(v[0][0]);
-        cof[1] = cof[3] = Mathf.CeilToInt(v[0][1]);
+        if (edit)
+        {
+            cof[0] = cof[2] = Mathf.RoundToInt(v[0][0]);
+            cof[1] = cof[3] = Mathf.RoundToInt(v[0][1]);
+        }
 
         if (v.Count > 1)
         {
             Vector3[] v1 = new Vector3[v.Count + 1];
+            if (edit)
             for (int i = 1; i < v.Count; i++)//(fix)
             {
                 Vector3 v2 = v[i];
-                int x = Mathf.CeilToInt(v2[0]);
-                int y = Mathf.CeilToInt(v2[1]);
+                int x = Mathf.RoundToInt(v2[0]);
+                int y = Mathf.RoundToInt(v2[1]);
                 if (cof[0] > x)
                     cof[0] = x;
                 if (cof[2] < x)
@@ -477,15 +560,16 @@ public class MapSystem : MonoBehaviour
     int SelectRoom()
     {
         int id =-1;
-        int x = Mathf.CeilToInt(cellPosition[0]);
-        int y = Mathf.CeilToInt(cellPosition[1]);
+        int x = Mathf.RoundToInt(cellPosition[0]);
+        int y = Mathf.RoundToInt(cellPosition[1]);
         for (int i = 0; i < roomList.Count; i++)
         {
             int[] coord = roomList[i].Border;
             if (coord[0] > x ||
                 coord[1] > y ||
                 coord[2] < x ||
-                coord[3] < y
+                coord[3] < y ||
+                levels[1] != roomList[i].Level
                 )
                 continue;
             else
@@ -765,6 +849,10 @@ public class MapSystem : MonoBehaviour
                     SwitchLevel(levels[1]);
                 }
             }
+            if (Input.GetKeyDown(KeyCode.N))
+            {
+                OpenAddLevelWindow();
+            }
         }
         else
         {
@@ -834,7 +922,7 @@ public class MapSystem : MonoBehaviour
 
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mousePos = new Vector3(mousePos.x, mousePos.y, 0) + vFix;
-            //actualPosition = new Vector2Int(mousePos.x, mousePos.y);Mathf.CeilToInt(
+            //actualPosition = new Vector2Int(mousePos.x, mousePos.y);Mathf.RoundToInt(
             cellPosition = ui.WorldGrid.WorldToCell(mousePos);
             if (cellPosition != afterPosition && !blok)
             {
