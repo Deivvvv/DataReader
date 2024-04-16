@@ -432,21 +432,21 @@ public class MapSystem : MonoBehaviour
             lookPos = id;
             return;
         }
-        for(int i=0;i< lines.Count-1; i++)
-        {
-        //    if (i + 1 == lines.Count)
-        //    {
-        //        ScanLine(lines[i], lines[0]);
-        //    }
-        //    else
-        //    {
-                ScanLine(lines[i], lines[i + 1], cellPosition);
-          //  }
-        }
+        //for(int i=0;i< lines.Count-1; i++)
+        //{
+        ////    if (i + 1 == lines.Count)
+        ////    {
+        ////        ScanLine(lines[i], lines[0]);
+        ////    }
+        ////    else
+        ////    {
+        //        ScanLine(lines[i], lines[i + 1], cellPosition);
+        //  //  }
+        //}
 
         lines.Add(v);
 
-        ViewLine(ui.Lines[idRoom], lines, idRoom);
+        ViewLine(ui.Lines[idRoom], lines, idRoom,true);
 
     }
 
@@ -463,7 +463,7 @@ public class MapSystem : MonoBehaviour
         else
             lines.RemoveAt(lines.Count - 1);
 
-        ViewLine(ui.Lines[idRoom], lines, idRoom);
+        ViewLine(ui.Lines[idRoom], lines, idRoom, true);
     }
     Vector3 Lerp(Vector3 start, Vector3 end, float percent)
     {
