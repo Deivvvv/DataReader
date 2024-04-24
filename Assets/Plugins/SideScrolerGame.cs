@@ -2,21 +2,56 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//using DG.Tweening.Core;
+//using DG.Tweening.Plugins.Core.PathCore;
+//using DG.Tweening.Plugins.Options;
+using DG.Tweening;
+
 public class SideScrolerGame : MonoBehaviour
 {
     static class BD 
     {
         static List<GameItem> GameItems;
+        static List<Sprite> Sprites;
        public struct GameItem
         {
             public string Name;
+            public string IdName;
             public int StartTime, EndTime;
-            public Texture2D FirsIcon;//базовая иконка
-            public Texture2D DestroyIcon;//уничтоженаня иконка
+            public Sprite FirstIcon;//базовая иконка
+            public Sprite DestroyIcon;//уничтоженаня иконка
+
+            public GameItem(string str, string id, int a, int b)
+            {
+                Name = str;
+                IdName = id;
+                StartTime = a;
+                EndTime = b;
+                FirstIcon = FindIcon(id);
+                DestroyIcon = FindIcon(id +"-Des");
+
+            }
         }
+        
+
+
+        static Sprite FindIcon(string str)
+        {
+            int id = Sprites.FindIndex(x => x.name == str);
+            if (id != -1)
+            {
+                return Sprites[id];
+            }
+            return null;
+        }
+
         public static void Start()
         {
+            Debug.Log("!connectBd");
             GameItems = new List<GameItem>();
+            GameItems.Add(new GameItem("Мука","Four", 7,3));
+            GameItems.Add(new GameItem("Молоко", "Milk", 7, 3));
+            GameItems.Add(new GameItem("Яица", "Egs", 7, 3));
         }
 
 
@@ -26,12 +61,12 @@ public class SideScrolerGame : MonoBehaviour
         }
 
     }
+
     class ScrolerUi
     {
         public GameObject[] PlayerBody;
-        public Transform ActiveItem;
-        public Transform OffItem;
-        public GameObject OrigItem;
+        public Transform ActiveItem, BufferItem, OffItem, StartPosition;
+        public GameObject OrigItem, OrigGridPoint;
     }
 
     class GameItemCase : MonoBehaviour
@@ -40,6 +75,9 @@ public class SideScrolerGame : MonoBehaviour
         int Id;
         void OnCollisionEnter(Collision collisionInfo)//Stay(Collision collisionInfo)
         {
+            //  transform.DOMove(transform)
+            //transform.DOMove();
+
             Debug.Log("Colision");
             {
                 game.GrabItem(Id, gameObject);
@@ -126,8 +164,12 @@ public class SideScrolerGame : MonoBehaviour
     List<GameObject> activeItem;
     List<GameObject> activeItemTime;
 
+
+
     private List<Biom> biomsList;
     private List<Stage> stagesList;
+
+    public Transform[] Grid;
 
     float gameTime;
     Vector2Int nextTime;
@@ -206,13 +248,18 @@ public class SideScrolerGame : MonoBehaviour
                 Exit();
                 return;
             }
-            Debug.Log("Подождпть, пока кол-во актиных предметов будет равно 0");
+            if (!endStage) {
+                endStage = true;
+                return;
+                    }
+            endStage = false;
+           // Debug.Log("Подождпть, пока кол-во актиных предметов будет равно 0");
 
             nextTime = new Vector2Int(id, 0);
             MovePath();
         }
 
-
+        ExecuteAfterTime(stagesList[nextTime[0]].Path[nextTime[1]]);
 
     }
     void MovePath()
@@ -220,6 +267,19 @@ public class SideScrolerGame : MonoBehaviour
         Debug.Log("Анимируем преход к следующему месту сбора");
     }
 
+    void CreateGrid()
+    {
+        Vector2Int size = new Vector2Int(2, 2);
+        Vector2Int eage = new Vector2Int(3, 3);
+        Grid = new Transform[eage[0] * eage[1]];
+      //  Grid[0] = ui.StartPosition;
+        for (int i = 0; i < eage[0]; i++)
+            for (int j = 0; j < eage[1]; j++)
+            {
+                Grid[i*eage[0]+j] = Instantiate(ui.StartPosition);
+                Grid[i * eage[0] + j].position = ui.StartPosition.position + new Vector3(i * size[0] , j * size[1],0);
+            }
+    }
     void ConnectPlayer()
     {
         PlayerBody[0] =ui.PlayerBody[0];
@@ -245,27 +305,45 @@ public class SideScrolerGame : MonoBehaviour
    
     public void GrabItem(int idItem, GameObject go)
     {
-        go.SetActive(false);
-        go.transform.SetParent(ui.OffItem);
+        ClosedItem(idItem, go, false);
 
         int id = PlayerItem.FindIndex(x => x ==idItem);
         if (id == -1)
         {
             id = PlayerItem.Count;
             PlayerItem.Add(idItem);
+            PlayerItemSize.Add(0);
         }
+        PlayerItemSize[id]++;
+      //  ClosedItem(idItem, go);
 
         if (endStage)
         {
             if(ui.ActiveItem.childCount == 0)
             {
-                MovePath();
+                NextPath();
             }
         }
     }
+
+    IEnumerator ClosedItem(int id, GameObject go, bool shorts)
+    {
+        // ui.ActiveItem
+        if (!shorts)
+        {
+            go.transform.SetParent(ui.BufferItem);
+            go.GetComponent<SpriteRenderer>().sprite = BD.GetGameItem(id).DestroyIcon;//передаем номер и состояние(уничтоженно)
+            yield return new WaitForSeconds(2);
+        }
+
+        go.SetActive(false);
+        go.transform.SetParent(ui.OffItem);
+    }
+
     void Start()
     {
-        Debug.Log("!connectBd");
+        BD.Start();
+        CreateGrid();
         CreatePathScene();
         ConnectPlayer();
         PlayPath();
@@ -286,8 +364,16 @@ public class SideScrolerGame : MonoBehaviour
     {
         GameObject go = GetItemBody();
         BD.GameItem item = BD.GetGameItem(id);
+        go.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = item.FirsIcon;
 
-        go.transform.position = new Vector3(Random.Range(2,4), Random.Range(2, 4),0);//случайная позиция
+        go.transform.position = PlayerBody[1].transform.position;
+        Vector3 newV =    new Vector3(Random.Range(2,4), Random.Range(2, 4),0);//случайная позиция
+
+        DOTween.KillAll(go);//отчистка аниматора
+        go.transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+        go.GetComponent<SpriteRenderer>().color = new Color(255,255,255,100);
+
+        go.GetComponent<SpriteRenderer>().DOColor(new Color(255, 255, 255, 200), item.StartTime); 
 
         //SetAnimator(item)//настравиваем полный цикл анимаций
         yield return new WaitForSeconds(item.StartTime);
