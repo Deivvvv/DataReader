@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+using DataSpace;
 using FileReader;
 
 public class MapSystem : MonoBehaviour
@@ -151,10 +152,19 @@ public class MapSystem : MonoBehaviour
         public int Level;
         public List<Vector3> Lines;
         public Vector3 TextPosition;
+        public List<WorkSpace> WorkSpaces;
         public int[] Border = new int[4];
         public bool Save;
     }
 
+    public class WorkSpace
+    {
+        public string Name;
+        public List<Texture2D> Photo;
+        public int Emploes;
+        public List<intM> items;
+        
+    }
 
     float lerpF(int a, int b)
     {
@@ -329,8 +339,6 @@ public class MapSystem : MonoBehaviour
             }
 
             go.transform.GetChild(0).gameObject.GetComponent<Text>().text = text;
-
-
         }
 
         switch (mood)
@@ -352,6 +360,7 @@ public class MapSystem : MonoBehaviour
         Debug.Log(mood);
 
     }
+
 
 
     void AddLinePoint(Vector3 v)
@@ -544,6 +553,7 @@ public class MapSystem : MonoBehaviour
         room.Level = levels[1];
         room.Save =true;
 
+        room.WorkSpaces = new List<WorkSpace>();
         GameObject go = Instantiate(ui.OrigLine);
         go.transform.SetParent(ui.LineStorage);
         ui.Lines.Add(go.GetComponent<LineRenderer>());
@@ -630,6 +640,25 @@ public class MapSystem : MonoBehaviour
         LoadButton("Map");
         idRoom = -1;
 
+    }
+
+    void CreatePhoto()
+    {
+
+        int resWidth = Screen.width;
+        int resHeight = Screen.height;
+        string name;
+        name = System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss") + ".png";
+        RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
+        ui.Camera.gameObject.GetComponent<Camera>().targetTexture = rt;
+        Texture2D screenShot = new Texture2D(resWidth, resHeight, TextureFormat.RGB24, false);
+       // Rect rec = new Rect(0, 0, screenShot.width, screenShot.height);
+        ui.Camera.gameObject.GetComponent<Camera>().Render();
+        RenderTexture.active = rt;
+        screenShot.ReadPixels(new Rect(0, 0, resWidth, resHeight), 0, 0);
+        screenShot.Apply();
+
+        byte[] bytes = screenShot.EncodeToPNG();
     }
 
     // Start is called before the first frame update

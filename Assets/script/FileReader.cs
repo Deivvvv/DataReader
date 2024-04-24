@@ -808,7 +808,36 @@ namespace FileReader
             File.WriteAllText($"{mainPath}Data/Subject/{data.Name}.xml", saveDoc.ToString());
         }
 
+        public static void SaveWorkSpace(List<string> levels, MapSystem.Room room, int work)
+        {
+            MapSystem.WorkSpace workSpace = room.WorkSpaces[work];
+            string path = $"{mainPath}Data/Room/";
+            string p1 = $"{path}{levels[room.Level]}/{room.OldName}";
+            if (!Directory.Exists(p1))
+                Directory.CreateDirectory(p1);
 
+            XElement root = new XElement("root");
+            root.Add(new XElement("Name", workSpace.Name));
+            root.Add(new XElement("Emploes", workSpace.Name));
+            string str = "";
+
+            for(int i = 0; i < workSpace.items.Count; i++)
+            {
+                intM m = workSpace.items[i];
+
+               // Storage.IdCase 
+                UnitData.MainIdCase unitData = Storage.GetUnit(m);
+            }
+
+            XDocument saveDoc = new XDocument(root);
+            File.WriteAllText($"{p1}/{workSpace.Name}.xml", saveDoc.ToString());
+        }
+        public static void SaveWorkSpacePhoto(List<string> levels, MapSystem.Room room, int work,byte[] bytes, int id)
+        {
+            string path = $"{mainPath}Data/Room/{levels[room.Level]}/{room.Name}/{room.WorkSpaces[work].Name}/{id}";
+
+            File.WriteAllBytes(path, bytes);
+        }
         public static void SaveLevels(List<string> str)
         {
             string path = $"{mainPath}Data/Room/";
@@ -818,6 +847,7 @@ namespace FileReader
         }
         public static void SaveRooms(List<MapSystem.Room> rooms, int[] id, GridLayout worldGrid, List<string> levels)
         {
+
             string GetStrVector(Vector3 v)
             {
                 string str = $"{v[0]}:{v[1]}";
@@ -829,10 +859,13 @@ namespace FileReader
             for (int i = 0; i < rooms.Count; i++)
             {
                 MapSystem.Room room = rooms[i];
-                if(room.Name != room.OldName)
+                string p1 = $"{path}{levels[room.Level]}/{room.Name}";
+                if (room.Name != room.OldName)
                 {
-                    File.Delete($"{path}{levels[room.Level]}/{room.OldName}.xml");
-                    room.OldName = room.Name;
+                    string p2 = $"{path}{levels[room.Level]}/{room.OldName}";
+                    File.Delete(p2);
+                    if (Directory.Exists(p2))
+                        Directory.Move(p2, p1);
                 }
 
                 XElement root = new XElement("root");
@@ -852,10 +885,31 @@ namespace FileReader
 
                 root.Add(new XElement("Line", str));
 
+                 //   str = GetWorkSapace(room.WorkSpaces[0]);
+                for (int j = 0; j < room.WorkSpaces.Count; j++)
+                {
+                    //string p2 = $"{p1}/{room.WorkSpaces[j].Name}";
+                    //if (!Directory.Exists(p2))
+                    //    Directory.CreateDirectory(p2);
+                    ////$"{path}{levels[room.Level]}/{room.Name}/{room.WorkSpaces[j].Name}";
 
-                root.Add(new XElement("WorkStation", " "));
+                    //if (room.Name != room.OldName)
+                    //{
+                    //    string p2 = $"{path}{levels[room.Level]}/{room.OldName}/{room.WorkSpaces[j].Name}";
+                    //    Directory.Move(p1, p2);
+                    //    //string  p2 = $"{path}{levels[room.Level]}/{room.Name}/{room.WorkSpaces[j].Name}";
 
-                Debug.Log(room.Name);
+                    //}
+
+                    //if (!Directory.Exists(path + str))
+                    //    Directory.CreateDirectory(path + str);
+
+                }
+
+                // root.Add(new XElement("WorkStation", str));
+
+                room.OldName = room.Name;
+
                 XDocument saveDoc = new XDocument(root);
                 File.WriteAllText($"{path}{levels[room.Level]}/{room.Name}.xml", saveDoc.ToString());
             }
