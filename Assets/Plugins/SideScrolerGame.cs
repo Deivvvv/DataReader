@@ -4,6 +4,28 @@ using UnityEngine;
 
 public class SideScrolerGame : MonoBehaviour
 {
+    static class BD 
+    {
+        static List<GameItem> GameItems;
+       public struct GameItem
+        {
+            public string Name;
+            public int StartTime, EndTime;
+            public Texture2D FirsIcon;//базовая иконка
+            public Texture2D DestroyIcon;//уничтоженаня иконка
+        }
+        public static void Start()
+        {
+            GameItems = new List<GameItem>();
+        }
+
+
+        public static GameItem GetGameItem(int id)
+        {
+            return GameItems[id];
+        }
+
+    }
     class ScrolerUi
     {
         public GameObject[] PlayerBody;
@@ -12,11 +34,50 @@ public class SideScrolerGame : MonoBehaviour
         public GameObject OrigItem;
     }
 
-    class GameItem
+    class GameItemCase : MonoBehaviour
     {
         SideScrolerGame game;
-        int ItemId;
+        int Id;
+        void OnCollisionEnter(Collision collisionInfo)//Stay(Collision collisionInfo)
+        {
+            Debug.Log("Colision");
+            {
+                game.GrabItem(Id, gameObject);
+            }
+           // collisionInfo.gameObject.get
+        }
 
+
+        //Transform offItem;
+        //GameObject Colider;
+        //SideScrolerGame game;
+        //int itemId;
+        //public int Time, TimeEnd;
+
+
+        //public GameItemCase(SideScrolerGame _game, int id, int time, int timeEnd, Transform _offItem)
+        //{
+        //    game = _game;
+        //    itemId = id;
+        //    Time = time;
+        //    TimeEnd = timeEnd;
+        //}
+        //void useTime()
+        //{
+        //    Colider.SetActive(true);
+        //}
+        //void Check()//стоит ли игрок в зоне объекта
+        //{
+        //    game.GrabItem(itemId, gameObject);
+        //}
+        //IEnumerator EndTime()
+        //{
+        //    gameObject.transform.SetParent(offItem);
+        //    //gameObject.GetComponent<SpriteRenderer>().sprite = BD.GetItemIcon( itemId, 1);//передаем номер и состояние(уничтоженно)
+        //    yield return new WaitForSeconds(2);
+
+        //    gameObject.SetActive(false);
+        //}
     }
     // Start is called before the first frame update
 
@@ -58,6 +119,7 @@ public class SideScrolerGame : MonoBehaviour
 
     private ScrolerUi ui;
     private GameObject[] PlayerBody;
+    private Rigidbody2D PlayerBodyRig;
     List<int> PlayerItem;
     List<int> PlayerItemSize;
 
@@ -74,6 +136,21 @@ public class SideScrolerGame : MonoBehaviour
     bool endStage =false;
     //сецнарий (этап:биом-длительность-сложность) + множитель пачек от сложности игры
 
+    GameObject GetItemBody()
+    {
+        GameObject go = null;
+        if(ui.OffItem.childCount > 0)
+        {
+            go = ui.OffItem.GetChild(0).gameObject;
+        }
+        else
+        {
+            go = Instantiate(ui.OrigItem);
+        }
+        go.transform.SetParent(ui.ActiveItem);
+
+        return go;
+    }
     Stage CreateStage(int id ,int size, int hard )
     {
 
@@ -154,17 +231,19 @@ public class SideScrolerGame : MonoBehaviour
     }
     void PlayerControl()
     {
-        
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+
+        // for moving camera based on input
+        PlayerBodyRig.AddForce(new Vector3(horizontal, vertical, 0));
+        //ui.Camera.position += new Vector3(horizontal, vertical, 0) * speed * Time.deltaTime;
     }
     void Exit()
     {
         Debug.Log("!connectBd");
     }
-    void CreateItem()
-    {
-
-    }
-    void GrabItem(int idItem, GameObject go)
+   
+    public void GrabItem(int idItem, GameObject go)
     {
         go.SetActive(false);
         go.transform.SetParent(ui.OffItem);
@@ -180,7 +259,7 @@ public class SideScrolerGame : MonoBehaviour
         {
             if(ui.ActiveItem.childCount == 0)
             {
-
+                MovePath();
             }
         }
     }
@@ -203,12 +282,26 @@ public class SideScrolerGame : MonoBehaviour
         PlayerControl();
     }
 
-    IEnumerator ExecuteAfterTime(float timeInSec)
+    IEnumerator CreateItem(int id)
     {
-        yield return new WaitForSeconds(timeInSec);
-        //сделать нужное
+        GameObject go = GetItemBody();
+        BD.GameItem item = BD.GetGameItem(id);
 
-        CreateItem(); 
+        go.transform.position = new Vector3(Random.Range(2,4), Random.Range(2, 4),0);//случайная позиция
+
+        //SetAnimator(item)//настравиваем полный цикл анимаций
+        yield return new WaitForSeconds(item.StartTime);
+        go.transform.GetChild(0).gameObject.SetActive(true);
+       // item.
+        yield return new WaitForSeconds(item.EndTime);
+
+    }
+    IEnumerator ExecuteAfterTime(Vector3Int v)
+    {
+        yield return new WaitForSeconds(v[1]);
+        for(int i =0;i<v[2];i++)
+            CreateItem(v[0]);
+
         NextPath();
 
     }
