@@ -364,7 +364,7 @@ public class SideScrolerGame : MonoBehaviour
     {
         GameObject go = GetItemBody();
         BD.GameItem item = BD.GetGameItem(id);
-        go.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = item.FirsIcon;
+        go.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().sprite = item.FirstIcon;
 
         go.transform.position = PlayerBody[1].transform.position;
         Vector3 newV =    new Vector3(Random.Range(2,4), Random.Range(2, 4),0);//случайная позиция
