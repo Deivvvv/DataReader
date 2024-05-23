@@ -1,0 +1,2627 @@
+<root>
+  <TaypG>
+    <Name>Cистемный блок</Name>
+    <Unit>
+      <Name>Pentium G4560/Deepkool</Name>
+      <Units>
+        <BNum>00-000000000000952</BNum>
+        <INum>21013400233</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000953</BNum>
+        <INum>21013400232</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Karin Office Std</Name>
+      <Units>
+        <BNum>00-000000000000778</BNum>
+        <INum>21013400205</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Karin Office </Name>
+      <Units>
+        <BNum>00-000000000000907</BNum>
+        <INum>21013400211</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000908</BNum>
+        <INum>21013400212</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000909</BNum>
+        <INum>21013400213</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000910</BNum>
+        <INum>21013400214</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000911</BNum>
+        <INum>21013400215</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер персональный тип 1 в составе (комплект)-систем.блок</Name>
+      <Units>
+        <BNum>00-000000000000102</BNum>
+        <INum>101040000246</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000104</BNum>
+        <INum>101040000248</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000105</BNum>
+        <INum>101040000249</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000106</BNum>
+        <INum>101040000250</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000107</BNum>
+        <INum>101040000251</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000108</BNum>
+        <INum>101040000252</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000109</BNum>
+        <INum>101040000253</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000110</BNum>
+        <INum>101040000254</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000111</BNum>
+        <INum>101040000255</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000112</BNum>
+        <INum>101040000256</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000113</BNum>
+        <INum>101040000257</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000114</BNum>
+        <INum>101040000258</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000126</BNum>
+        <INum>101040000270</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000103</BNum>
+        <INum>101040000247</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000115</BNum>
+        <INum>101040000259</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000116</BNum>
+        <INum>101040000260</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000117</BNum>
+        <INum>101040000261</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>IRBIS PCB751 AMD Ryzen 7</Name>
+      <Units>
+        <BNum>00-000000000001151</BNum>
+        <INum>792023000001</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>i5-8400/8192Мб (каб.304)</Name>
+      <Units>
+        <BNum>00-000000000001028</BNum>
+        <INum>792019000004</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Intel Core i7-12700/2*32GB/1000GB SSD NVMe/GeForce GT740/Wi-Fi/BT/600W</Name>
+      <Units>
+        <BNum>00-000000000001149</BNum>
+        <INum>792022000001</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>TIT i7-2600</Name>
+      <Units>
+        <BNum>00-000000000000710</BNum>
+        <INum>21013400069</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000709</BNum>
+        <INum>21013400068</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Foxcoon</Name>
+      <Units>
+        <BNum>00-000000000000042</BNum>
+        <INum>101040000329</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000043</BNum>
+        <INum>101040000330</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000044</BNum>
+        <INum>101040000331</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000045</BNum>
+        <INum>101040000332</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000046</BNum>
+        <INum>101040000333</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000047</BNum>
+        <INum>101040000334</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000048</BNum>
+        <INum>101040000335</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000049</BNum>
+        <INum>101040000336</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000050</BNum>
+        <INum>101040000337</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>SystemC iCP (системный блок) 336/GA-8VM800/256/ST80/DVD TS/FDD/350</Name>
+      <Units>
+        <BNum>00-000000000000059</BNum>
+        <INum>101040000017</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Комплект оборудования (Системный блок Acer Veriton )</Name>
+      <Units>
+        <BNum>0180069           </BNum>
+        <INum>0130102</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер 486DX2-80/256/8/54</Name>
+      <Units>
+        <BNum>0130001           </BNum>
+        <INum>0130001</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Acer Veriton 3300D P4,1Gb USB2.0Flash</Name>
+      <Units>
+        <BNum>0130032           </BNum>
+        <INum>0130032</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130033           </BNum>
+        <INum>0130033</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Acer Veriton 3600G P4</Name>
+      <Units>
+        <BNum>0130046           </BNum>
+        <INum>0130046</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130047           </BNum>
+        <INum>0130047</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130052           </BNum>
+        <INum>0130052</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Acer Veriton 6800 P4</Name>
+      <Units>
+        <BNum>0130054           </BNum>
+        <INum>0130054</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Acer Veriton 6800 P4-2</Name>
+      <Units>
+        <BNum>0130056           </BNum>
+        <INum>0130056</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Acer Veriton 7500G P4</Name>
+      <Units>
+        <BNum>0130039           </BNum>
+        <INum>0130039</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Acer Veriton 7500G P4,модем USR</Name>
+      <Units>
+        <BNum>0130040           </BNum>
+        <INum>0130040</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Acer Veriton FP2 PIII</Name>
+      <Units>
+        <BNum>0130024           </BNum>
+        <INum>0130024</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Aser Power 6100, мод.</Name>
+      <Units>
+        <BNum>0130006           </BNum>
+        <INum>0130006</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Aser Power Sn, PIII</Name>
+      <Units>
+        <BNum>0130009           </BNum>
+        <INum>0130009</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130010           </BNum>
+        <INum>0130010</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Aser Power Sn, PIII,мод.</Name>
+      <Units>
+        <BNum>0130008           </BNum>
+        <INum>0130008</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер Aser Power Sх, PIII</Name>
+      <Units>
+        <BNum>0130017           </BNum>
+        <INum>0130017</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130026           </BNum>
+        <INum>0130026</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер EPC Pentium-120/16 MB</Name>
+      <Units>
+        <BNum>0130048.5         </BNum>
+        <INum>0130048.5</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Компьютер IBM 6х86-266 /32 МВ</Name>
+      <Units>
+        <BNum>0130003           </BNum>
+        <INum>0130003</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Karin Office Std</Name>
+      <Units>
+        <BNum>00-000000000000777</BNum>
+        <INum>21013400204</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000779</BNum>
+        <INum>21013400206</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Intel  PII 233 MHz</Name>
+      <Units>
+        <BNum>0130004           </BNum>
+        <INum>0130004</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>ЕРС Р-200ММХ/ 32 МВ</Name>
+      <Units>
+        <BNum>0130002           </BNum>
+        <INum>0130002</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Комп. Комплект</Name>
+    <Unit>
+      <Name>Комплект оборудования (Комп. Aser Veriton М2610G, Монитор LCD 22" Philips 220V1SB)</Name>
+      <Units>
+        <BNum>0180033           </BNum>
+        <INum>0130087</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Вычислительный комплекс (Комп. Aser Veriton 6900 Монитор 19" Samsung TFT)</Name>
+      <Units>
+        <BNum>0130067           </BNum>
+        <INum>0130067</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130069           </BNum>
+        <INum>0130069</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Вычислительный комплекс (Комп. Aser Veriton М661 Монитор LCD 19" Samsung 943N)</Name>
+      <Units>
+        <BNum>0130073           </BNum>
+        <INum>0130073</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130074           </BNum>
+        <INum>0130074</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Комплект оборудования (Монитор LCD 19" Samsung 940N, Комп. Aser Veriton 6900</Name>
+      <Units>
+        <BNum>0130062           </BNum>
+        <INum>0130062</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130063           </BNum>
+        <INum>0130063</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Комплект оборудования (Комп. Aser Veriton М661, Монитор LCD 19" Samsung 943N)</Name>
+      <Units>
+        <BNum>0130076           </BNum>
+        <INum>0130076</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130078           </BNum>
+        <INum>0130078</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Комплект оборудования (Комп. Aser Veriton М2610G, Монитор LCD 20" Philips 206V3LSB/01)</Name>
+      <Units>
+        <BNum>0180056           </BNum>
+        <INum>0130098</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0180062           </BNum>
+        <INum>0130099</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Неттоп</Name>
+    <Unit>
+      <Name>Pegatron AMIS SAISHIAT2</Name>
+      <Units>
+        <BNum>00-000000000000839</BNum>
+        <INum>21013400126</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000842</BNum>
+        <INum>21013400129</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000843</BNum>
+        <INum>21013400130</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000847</BNum>
+        <INum>21013400134</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000848</BNum>
+        <INum>21013400135</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000849</BNum>
+        <INum>21013400136</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000850</BNum>
+        <INum>21013400137</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000851</BNum>
+        <INum>21013400138</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000832</BNum>
+        <INum>21013400141</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000833</BNum>
+        <INum>21013400142</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000836</BNum>
+        <INum>21013400145</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000837</BNum>
+        <INum>21013400146</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000838</BNum>
+        <INum>21013400125</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000840</BNum>
+        <INum>21013400127</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000853</BNum>
+        <INum>21013400140</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>ASUS E510-B267A </Name>
+      <Units>
+        <BNum>00-000000000000974</BNum>
+        <INum>21013400239</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000975</BNum>
+        <INum>21013400238</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000958</BNum>
+        <INum>21013400234</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000959</BNum>
+        <INum>21013400235</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000960</BNum>
+        <INum>21013400236</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Aсer Verinton</Name>
+      <Units>
+        <BNum>00-000000000001003</BNum>
+        <INum>21013400253</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000001004</BNum>
+        <INum>21013400252</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000001005</BNum>
+        <INum>21013400251</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000993</BNum>
+        <INum>21013400247</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000994</BNum>
+        <INum>21013400246</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000995</BNum>
+        <INum>21013400245</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000996</BNum>
+        <INum>21013400250</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000997</BNum>
+        <INum>21013400249</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000998</BNum>
+        <INum>21013400248</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000001006</BNum>
+        <INum>21013400256</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000001007</BNum>
+        <INum>21013400255</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000001008</BNum>
+        <INum>21013400254</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>LENOVO ThinkCentre Tiny M630e</Name>
+      <Units>
+        <BNum>00-000000000001098</BNum>
+        <INum>792020000004</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Lenovo Tiny M70q slim (грант)</Name>
+      <Units>
+        <BNum>00-000000000001125</BNum>
+        <INum>792021000003</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Pegatron Walle L6</Name>
+      <Units>
+        <BNum>00-000000000000694</BNum>
+        <INum>21013400053</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000695</BNum>
+        <INum>21013400054</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000697</BNum>
+        <INum>21013400056</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000698</BNum>
+        <INum>21013400057</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Pegatron AMIS L6</Name>
+      <Units>
+        <BNum>00-000000000000752</BNum>
+        <INum>21013400077</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000753</BNum>
+        <INum>21013400076</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000754</BNum>
+        <INum>21013400075</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000755</BNum>
+        <INum>21013400074</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000757</BNum>
+        <INum>21013400072</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Ноутбук</Name>
+    <Unit>
+      <Name>Aser Extensa EX215-22R19H</Name>
+      <Units>
+        <BNum>00-000000000001097</BNum>
+        <INum>792020000002</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000001099</BNum>
+        <INum>792020000003</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Asus K50 IJ </Name>
+      <Units>
+        <BNum>00-000000000000208</BNum>
+        <INum>101040000320</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000209</BNum>
+        <INum>101040000321</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>ASUS X200</Name>
+      <Units>
+        <BNum>00-000000000000804</BNum>
+        <INum>21013400120</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000805</BNum>
+        <INum>21013400109</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000806</BNum>
+        <INum>21013400110</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000807</BNum>
+        <INum>21013400111</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000808</BNum>
+        <INum>21013400112</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000809</BNum>
+        <INum>21013400113</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000810</BNum>
+        <INum>21013400114</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000811</BNum>
+        <INum>21013400115</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000812</BNum>
+        <INum>21013400116</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000813</BNum>
+        <INum>21013400117</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000815</BNum>
+        <INum>21013400119</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000814</BNum>
+        <INum>21013400118</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP Pavilion 17</Name>
+      <Units>
+        <BNum>00-000000000000861</BNum>
+        <INum>21013400157</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000863</BNum>
+        <INum>21013400159</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000864</BNum>
+        <INum>21013400160</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000866</BNum>
+        <INum>21013400162</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000867</BNum>
+        <INum>21013400163</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000868</BNum>
+        <INum>21013400164</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000869</BNum>
+        <INum>21013400165</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000870</BNum>
+        <INum>21013400166</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000871</BNum>
+        <INum>21013400167</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000872</BNum>
+        <INum>21013400168</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000873</BNum>
+        <INum>21013400169</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000874</BNum>
+        <INum>21013400170</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000862</BNum>
+        <INum>21013400158</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP Pеntium Silver 15</Name>
+      <Units>
+        <BNum>00-000000000001027</BNum>
+        <INum>792019000002</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Lenovo IdeaPad S145-15API</Name>
+      <Units>
+        <BNum>00-000000000001123</BNum>
+        <INum>792021000001</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000001124</BNum>
+        <INum>792021000002</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Lenovo ThinkPad Edge E530</Name>
+      <Units>
+        <BNum>00-000000000000732</BNum>
+        <INum>21013400086</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000733</BNum>
+        <INum>21013400085</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000734</BNum>
+        <INum>21013400084</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Samsung 300E5C-U04</Name>
+      <Units>
+        <BNum>00-000000000000652</BNum>
+        <INum>21013400011</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000654</BNum>
+        <INum>21013400013</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000653</BNum>
+        <INum>21013400012</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Asus (W5F Duo T2300E, 12"XGA)</Name>
+      <Units>
+        <BNum>0130064           </BNum>
+        <INum>0130064</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Asus Eee PC 1005PE (Atom N450, 2Gb, 250 Gb, 10.1", BT, WiFi, camera, Linux}</Name>
+      <Units>
+        <BNum>0130083           </BNum>
+        <INum>0130083</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Asus K50IJ (T3100 1.9GHz, 250Gb 15.6"HD, DVDRW, WiFi, camera, Linex)</Name>
+      <Units>
+        <BNum>0130079           </BNum>
+        <INum>0130079</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130080           </BNum>
+        <INum>0130080</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130085           </BNum>
+        <INum>0130085</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Asus M5200A</Name>
+      <Units>
+        <BNum>0130050           </BNum>
+        <INum>0130050</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Samsung Q45 (Intel Core 2 Duo 1024 Мб)</Name>
+      <Units>
+        <BNum>0130068           </BNum>
+        <INum>0130068</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Toshiba Portege R100</Name>
+      <Units>
+        <BNum>0130043           </BNum>
+        <INum>0130043</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Toshiba Satellite C850-BLK (Pentium B940 2.0GHz, 4Gb, 320Gb, 15.6'' 1366x768, Intel HD Graphics, DVDRW, BT, Cam, Wijndows 7 Basic)</Name>
+      <Units>
+        <BNum>0180043           </BNum>
+        <INum>0130093</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0180044           </BNum>
+        <INum>0130094</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0180045           </BNum>
+        <INum>0130095</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Toshiba Satellite A10 C-2.5</Name>
+      <Units>
+        <BNum>0130045           </BNum>
+        <INum>0130045</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Asus K50 IJ</Name>
+      <Units>
+        <BNum>00-000000000000207</BNum>
+        <INum>101040000319</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>ASUS X50C (Celeron-220 1.2GHz, 160Gb(5400 rpm), 2048 Mb, NV GeForce9300MGS 256MB VRAM,</Name>
+      <Units>
+        <BNum>00-000000000000210</BNum>
+        <INum>101040000199</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>ASUS X50C (Радыгина В.М.) (Celeron-220 1.2GHz 160Gb</Name>
+      <Units>
+        <BNum>00-000000000000211</BNum>
+        <INum>101040000200</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Samsung компьютер портативный R720-FS04 Black T6500/3G/320G/DVD-SMulti/17.3</Name>
+      <Units>
+        <BNum>00-000000000000089</BNum>
+        <INum>101040000244</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Проектор</Name>
+    <Unit>
+      <Name>Optoma DX349,ХGA.3000 ANSI...</Name>
+      <Units>
+        <BNum>00-000000000000917</BNum>
+        <INum>21013400219</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000918</BNum>
+        <INum>21013400218</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Проектор ACER P1223</Name>
+      <Units>
+        <BNum>00-000000000000658</BNum>
+        <INum>21013400017</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000659</BNum>
+        <INum>21013400018</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000660</BNum>
+        <INum>21013400019</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>ACER P1270, DLP projector, XGA 1024*768, 2000:1, 3100 ANSI Lumens, 2.5kg, 31dBA, HDMI</Name>
+      <Units>
+        <BNum>00-000000000000237</BNum>
+        <INum>101040000316</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>ACER X1261, DLP projector, XGA 1024*768, Nvidia 3D&amp;DLP 3D, 3700:1,2500 ANSI Lumens, 2.2kg</Name>
+      <Units>
+        <BNum>00-000000000000238</BNum>
+        <INum>101040000317</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000239</BNum>
+        <INum>101040000318</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>BENQ  MX528 DLP,3D,1024*768,3300 (Китай)</Name>
+      <Units>
+        <BNum>00-000000000000920</BNum>
+        <INum>21013400220</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>BenQ MX880UST</Name>
+      <Units>
+        <BNum>00-000000000000789</BNum>
+        <INum>21013400007</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Panasonic PT-LX26H</Name>
+      <Units>
+        <BNum>00-000000000000792</BNum>
+        <INum>21013400097</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000793</BNum>
+        <INum>21013400098</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000794</BNum>
+        <INum>21013400099</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000795</BNum>
+        <INum>21013400100</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000796</BNum>
+        <INum>21013400101</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000797</BNum>
+        <INum>21013400102</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000798</BNum>
+        <INum>21013400103</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000801</BNum>
+        <INum>21013400106</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000799</BNum>
+        <INum>21013400104</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000800</BNum>
+        <INum>21013400105</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000802</BNum>
+        <INum>21013400107</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Acer P1276</Name>
+      <Units>
+        <BNum>00-000000000000771</BNum>
+        <INum>21013400198</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000772</BNum>
+        <INum>21013400199</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000773</BNum>
+        <INum>21013400200</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>BenQ MW 767</Name>
+      <Units>
+        <BNum>00-000000000000729</BNum>
+        <INum>21013400089</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000730</BNum>
+        <INum>21013400088</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000731</BNum>
+        <INum>21013400087</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000727</BNum>
+        <INum>21013400091</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000728</BNum>
+        <INum>21013400090</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>BENQ  MX528 DLP,3D,1024*768,3300  (Китай)</Name>
+      <Units>
+        <BNum>00-000000000000921</BNum>
+        <INum>21013400221</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Epson EB-824 (3LCD, 3000 ANSI Lm, XGA, 2000:1,6000ч, USB, RJ45, RS232)</Name>
+      <Units>
+        <BNum>0130084           </BNum>
+        <INum>0130084</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Toshiba T400,экран наст.</Name>
+      <Units>
+        <BNum>0130038           </BNum>
+        <INum>0130038</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Toshiba TDP P75</Name>
+      <Units>
+        <BNum>0130049           </BNum>
+        <INum>0130049</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Toshiba TDP TW350</Name>
+      <Units>
+        <BNum>0130065           </BNum>
+        <INum>0130065</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Принтер</Name>
+    <Unit>
+      <Name>HP LaserJet P1606dn, А4, лазерный</Name>
+      <Units>
+        <BNum>00-000000000000783</BNum>
+        <INum>21013400001</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000784</BNum>
+        <INum>21013400002</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000785</BNum>
+        <INum>21013400003</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000786</BNum>
+        <INum>21013400004</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000787</BNum>
+        <INum>21013400005</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000788</BNum>
+        <INum>21013400006</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP LaserJet Pro 1102</Name>
+      <Units>
+        <BNum>00-000000000000213</BNum>
+        <INum>101040000305</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000214</BNum>
+        <INum>101040000306</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000215</BNum>
+        <INum>101040000307</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000217</BNum>
+        <INum>101040000309</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000218</BNum>
+        <INum>101040000310</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000219</BNum>
+        <INum>101040000311</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000857</BNum>
+        <INum>21013400153</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000859</BNum>
+        <INum>21013400155</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000860</BNum>
+        <INum>21013400156</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000216</BNum>
+        <INum>101040000308</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Кyocera P2335dn(каб.116-библ.)</Name>
+      <Units>
+        <BNum>00-000000000001031</BNum>
+        <INum>792019000003</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP Laser Jet 1100</Name>
+      <Units>
+        <BNum>00-000000000000228</BNum>
+        <INum>000000000035</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP LaserJet Pro P1606dn</Name>
+      <Units>
+        <BNum>00-000000000000661</BNum>
+        <INum>21013400020</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000662</BNum>
+        <INum>21013400021</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000663</BNum>
+        <INum>21013400022</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Копировальный аппарат CANON FC-330 (A4)</Name>
+      <Units>
+        <BNum>0130048.2         </BNum>
+        <INum>0130048.2</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Копировальный аппарат Rank Xerox XC-520, A4</Name>
+      <Units>
+        <BNum>0130048.7         </BNum>
+        <INum>0130048.7</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Копировальный аппарат Toshiba1550</Name>
+      <Units>
+        <BNum>0130011           </BNum>
+        <INum>0130011</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Epson CX-5200 A4</Name>
+      <Units>
+        <BNum>0130042           </BNum>
+        <INum>0130042</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP Laser Jet 1010</Name>
+      <Units>
+        <BNum>00-000000000000334</BNum>
+        <INum>000000000192</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP Laser Jet 1020 A4</Name>
+      <Units>
+        <BNum>00-000000000000212</BNum>
+        <INum>000000000302</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP Laser Jet 4L A4</Name>
+      <Units>
+        <BNum>0130048.3         </BNum>
+        <INum>0130048.3</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP LaserJet Pro P1102 RU,лазерный монохромный</Name>
+      <Units>
+        <BNum>00-000000000000858</BNum>
+        <INum>21013400154</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP LJ 1100</Name>
+      <Units>
+        <BNum>0130007           </BNum>
+        <INum>0130007</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130012           </BNum>
+        <INum>0130012</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130018           </BNum>
+        <INum>0130018</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP LJ 1300</Name>
+      <Units>
+        <BNum>0130044           </BNum>
+        <INum>0130044</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP LJ 2200 DT</Name>
+      <Units>
+        <BNum>0130031           </BNum>
+        <INum>0130031</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP LJ 2820</Name>
+      <Units>
+        <BNum>0130058           </BNum>
+        <INum>0130058</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP LJ 3390</Name>
+      <Units>
+        <BNum>0130060           </BNum>
+        <INum>0130060</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Xerox WorkCentre A4</Name>
+      <Units>
+        <BNum>0130041           </BNum>
+        <INum>0130041</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Xerox XD 102</Name>
+      <Units>
+        <BNum>0130015           </BNum>
+        <INum>0130015</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130028           </BNum>
+        <INum>0130028</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Принтер лазерный  Jet 6</Name>
+      <Units>
+        <BNum>00-000000000000232</BNum>
+        <INum>000000000038</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Hewiet Paskard 1200 Laser JetС7044</Name>
+      <Units>
+        <BNum>00-000000000000224</BNum>
+        <INum>000000000043</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP A4 LaserJet P1005</Name>
+      <Units>
+        <BNum>00-000000000000233</BNum>
+        <INum>101040000201</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000234</BNum>
+        <INum>101040000238</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Panasonic KX P6500 laser A4</Name>
+      <Units>
+        <BNum>0130048.10.1      </BNum>
+        <INum>0130048.10.1</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130048.10.2      </BNum>
+        <INum>0130048.10.2</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130048.9         </BNum>
+        <INum>0130048.9</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>МФУ</Name>
+    <Unit>
+      <Name>НР LaserJet Pro М436dn </Name>
+      <Units>
+        <BNum>00-000000000001059</BNum>
+        <INum>792020000001</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Brother MFC-L2751DW</Name>
+      <Units>
+        <BNum>00-000000000001131</BNum>
+        <INum>792021000005</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000001133</BNum>
+        <INum>792021000006</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Brother MFC-L2751DW (грант)</Name>
+      <Units>
+        <BNum>00-000000000001126</BNum>
+        <INum>792021000004</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Canon i-Sensys MF3010</Name>
+      <Units>
+        <BNum>00-000000000001132</BNum>
+        <INum>792021000007</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Kyocera М2635DN</Name>
+      <Units>
+        <BNum>00-000000000000981</BNum>
+        <INum>21013400241</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Xerox WorkCentre 6515DN</Name>
+      <Units>
+        <BNum>00-000000000000991</BNum>
+        <INum>21013400242</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Саnon i-Sensys MF 264dw</Name>
+      <Units>
+        <BNum>00-000000000001030</BNum>
+        <INum>792019000006</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000001029</BNum>
+        <INum>792019000005</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Кyocera </Name>
+      <Units>
+        <BNum>00-000000000000956</BNum>
+        <INum>21013400229</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000957</BNum>
+        <INum>21013400228</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Pantum CM1100ADN</Name>
+      <Units>
+        <BNum>00-000000000001153</BNum>
+        <INum>792023000003</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Brother MFC-7860DW</Name>
+      <Units>
+        <BNum>00-000000000000854</BNum>
+        <INum>21013400147</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000855</BNum>
+        <INum>21013400148</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000856</BNum>
+        <INum>21013400149</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000898</BNum>
+        <INum>21013400150</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000899</BNum>
+        <INum>21013400151</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000900</BNum>
+        <INum>21013400152</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>XEROX WorkCentre 5745</Name>
+      <Units>
+        <BNum>00-000000000000646</BNum>
+        <INum>21013400008</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>цветной XEROX WC 5955</Name>
+      <Units>
+        <BNum>00-000000000000902</BNum>
+        <INum>21013400196</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Kyocera FS-1035MFP/DP</Name>
+      <Units>
+        <BNum>0180071           </BNum>
+        <INum>0130104</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>0180063           </BNum>
+        <INum>0130100</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>DCP-8085DN</Name>
+      <Units>
+        <BNum>00-000000000000202</BNum>
+        <INum>101040000313</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000203</BNum>
+        <INum>101040000314</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Цифровой копир с DADE и тумбой в комплекте с лотком подборки</Name>
+      <Units>
+        <BNum>00-000000000000137</BNum>
+        <INum>101040000212</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>А4 HP Laser Jet M1005 USB</Name>
+      <Units>
+        <BNum>00-000000000000138</BNum>
+        <INum>000000000317</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP LaserJet Pro M435x</Name>
+      <Units>
+        <BNum>00-000000000000735</BNum>
+        <INum>21013400093</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HP Laser Jet М2727nf A4</Name>
+      <Units>
+        <BNum>0130071           </BNum>
+        <INum>0130071</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Kyocera FS-1135MFP A4</Name>
+      <Units>
+        <BNum>0180034           </BNum>
+        <INum>0130088</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0180035           </BNum>
+        <INum>0130089</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Toshiba e-Studio 167 A3</Name>
+      <Units>
+        <BNum>0130072           </BNum>
+        <INum>0130072</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Цветной копиров.аппарат XEROX WC 6505n.</Name>
+      <Units>
+        <BNum>00-000000000000726</BNum>
+        <INum>21013400092</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Интерактивная доска</Name>
+    <Unit>
+      <Name>Elit Panaboard UB-T580</Name>
+      <Units>
+        <BNum>00-000000000000816</BNum>
+        <INum>21013400121</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000817</BNum>
+        <INum>21013400122</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000818</BNum>
+        <INum>21013400123</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>SMART Board SB480</Name>
+      <Units>
+        <BNum>00-000000000000774</BNum>
+        <INum>21013400201</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000775</BNum>
+        <INum>21013400202</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000776</BNum>
+        <INum>21013400203</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>интерактивная доска со строенным проектором SMART Board 480iv</Name>
+      <Units>
+        <BNum>00-000000000000664</BNum>
+        <INum>21013400023</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Экран для проектора</Name>
+    <Unit>
+      <Name>Экран для проектора</Name>
+      <Units>
+        <BNum>00-000000000000819</BNum>
+        <INum>21013600269</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000820</BNum>
+        <INum>21013600270</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000821</BNum>
+        <INum>21013600271</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000822</BNum>
+        <INum>21013600272</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000823</BNum>
+        <INum>21013600273</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000824</BNum>
+        <INum>21013600274</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000825</BNum>
+        <INum>21013600275</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000826</BNum>
+        <INum>21013600276</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000827</BNum>
+        <INum>21013600277</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000828</BNum>
+        <INum>21013600278</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000829</BNum>
+        <INum>21013600279</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000830</BNum>
+        <INum>21013600280</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Экран настенный рулонный</Name>
+      <Units>
+        <BNum>00-000000000000455</BNum>
+        <INum>ВА0000000028</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>ИБП</Name>
+    <Unit>
+      <Name>Ippon Smart</Name>
+      <Units>
+        <BNum>00-000000000000763</BNum>
+        <INum>21013400081</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000764</BNum>
+        <INum>21013400082</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Smart 7001 VA APC W/PC</Name>
+      <Units>
+        <BNum>0130019           </BNum>
+        <INum>0130019</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130020           </BNum>
+        <INum>0130020</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Ippon Васк Вasic 650</Name>
+      <Units>
+        <BNum>00-000000000000961</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000962</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000963</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000964</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000965</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000966</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000967</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000968</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000969</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000970</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000971</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000972</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000001148</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Коммутатор</Name>
+    <Unit>
+      <Name>HP Managed Network Switch V1910</Name>
+      <Units>
+        <BNum>00-000000000000906</BNum>
+        <INum>21013400210</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HPE Office Conneсt 1920 48G Switch (Китай)1</Name>
+      <Units>
+        <BNum>00-000000000000915</BNum>
+        <INum>21013400217</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HPE Office Conneсt 1920 48G Switch (Китай)2</Name>
+      <Units>
+        <BNum>00-000000000000914</BNum>
+        <INum>21013400216</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Cisco WS-C3650-48TS-S</Name>
+      <Units>
+        <BNum>00-000000000000904</BNum>
+        <INum>21013400195</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>D-link</Name>
+      <Units>
+        <BNum>00-000000000000057</BNum>
+        <INum>101040000243</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Сервер</Name>
+    <Unit>
+      <Name>ASUS RS700</Name>
+      <Units>
+        <BNum>00-000000000000760</BNum>
+        <INum>21013400078</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Sinto Sword</Name>
+      <Units>
+        <BNum>00-000000000000725</BNum>
+        <INum>21013400083</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Сетевое оборудование</Name>
+    <Unit>
+      <Name>Сетевое оборудование</Name>
+      <Units>
+        <BNum>0130048           </BNum>
+        <INum>0130048</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>0130048.1         </BNum>
+        <INum>0130048.1</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Модем</Name>
+    <Unit>
+      <Name>Модем 3COM Courier 56K EXT</Name>
+      <Units>
+        <BNum>0130027           </BNum>
+        <INum>0130027</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Модем USR Sportster</Name>
+      <Units>
+        <BNum>0130048.11        </BNum>
+        <INum>0130048.11</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Модем д-Линк</Name>
+      <Units>
+        <BNum>00-000000000000148</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Онлайн касса</Name>
+    <Unit>
+      <Name>Атол 91ф </Name>
+      <Units>
+        <BNum>0180077           </BNum>
+        <INum>0180001</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Видеокамера</Name>
+    <Unit>
+      <Name>Sony FDR-AX53 4K</Name>
+      <Units>
+        <BNum>00-000000000001025</BNum>
+        <INum>792019000001</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>кондиционер</Name>
+    <Unit>
+      <Name>кондиционер 1</Name>
+      <Units>
+        <BNum>00-000000000000134</BNum>
+        <INum>000000000006</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>кондиционер 2</Name>
+      <Units>
+        <BNum>00-000000000000135</BNum>
+        <INum>000000000007</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>кондиционер 3</Name>
+      <Units>
+        <BNum>00-000000000000136</BNum>
+        <INum>000000000008</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Сплит-система RS-A18E\RU-A18E (кондиционер)</Name>
+      <Units>
+        <BNum>00-000000000001032</BNum>
+        <INum>792019000008</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Lessar LS/LU-H24KEA2</Name>
+      <Units>
+        <BNum>00-000000000000766</BNum>
+        <INum>21013600257</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Планшет</Name>
+    <Unit>
+      <Name>Lenovo серебристый</Name>
+      <Units>
+        <BNum>00-000000000000990</BNum>
+        <INum>21013400243</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Субвуфер</Name>
+    <Unit>
+      <Name>Субвуфер ALTO MS15S</Name>
+      <Units>
+        <BNum>00-000000000000768</BNum>
+        <INum>21013400095</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>телевизор </Name>
+    <Unit>
+      <Name>LED 55*</Name>
+      <Units>
+        <BNum>00-000000000000736</BNum>
+        <INum>21013400194</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Philips 42 " PFL 42PFL7762D/12,  LCD телевизор</Name>
+      <Units>
+        <BNum>00-000000000000273</BNum>
+        <INum>101040000245</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Philips 55PFT 55"</Name>
+      <Units>
+        <BNum>00-000000000000781</BNum>
+        <INum>21013400208</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000782</BNum>
+        <INum>21013400209</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Sharp LC-70 70"</Name>
+      <Units>
+        <BNum>00-000000000000780</BNum>
+        <INum>21013400207</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Уничтожитель документов</Name>
+    <Unit>
+      <Name>HSM 125,2-1,9</Name>
+      <Units>
+        <BNum>00-000000000000281</BNum>
+        <INum>000000000079</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>HSM125,2/1</Name>
+      <Units>
+        <BNum>00-000000000000282</BNum>
+        <INum>000000000072</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Усилитель мощности</Name>
+    <Unit>
+      <Name>INVOTONE B900</Name>
+      <Units>
+        <BNum>00-000000000000767</BNum>
+        <INum>21013400094</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Финишер</Name>
+    <Unit>
+      <Name>Финишер базовый офисный к МФУ XEROX WorkCentre 5745</Name>
+      <Units>
+        <BNum>00-000000000000647</BNum>
+        <INum>21013400009</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Финишер офисный с транспортером финишера к МФУ XEROX WC 5955</Name>
+      <Units>
+        <BNum>00-000000000000903</BNum>
+        <INum>21013400197</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Финишер базовый офисный к МФУ XEROX WorkCentre 5632</Name>
+      <Units>
+        <BNum>00-000000000000648</BNum>
+        <INum>21013400010</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Фотоаппарат</Name>
+    <Unit>
+      <Name>CANON EOS 1300D KIT черный</Name>
+      <Units>
+        <BNum>00-000000000000976</BNum>
+        <INum>21013400237</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Фотоаппарат цифровой CANON</Name>
+      <Units>
+        <BNum>00-000000000000284</BNum>
+        <INum>000000000318</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>KODAK KE 85 Zoom</Name>
+      <Units>
+        <BNum>0130048.14        </BNum>
+        <INum>0130048.14</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Шкаф серверный</Name>
+    <Unit>
+      <Name>Шкаф серверный</Name>
+      <Units>
+        <BNum>00-000000000000765</BNum>
+        <INum>21013600256</INum>
+        <Tayp>Б</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>видеокамера</Name>
+    <Unit>
+      <Name>Видео камера DCR- PC100E</Name>
+      <Units>
+        <BNum>0130021           </BNum>
+        <INum>0130021</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>видеокамера цветная Sony</Name>
+      <Units>
+        <BNum>00-000000000000054</BNum>
+        <INum>000000000319</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Микшерный пульт</Name>
+    <Unit>
+      <Name>Behrinder UB 1222FX - PRO</Name>
+      <Units>
+        <BNum>00-000000000000769</BNum>
+        <INum>21013400096</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Сканер</Name>
+    <Unit>
+      <Name>Сканер</Name>
+      <Units>
+        <BNum>00-000000000000349</BNum>
+        <INum>000000000122</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Сканер Color Umax Astra</Name>
+      <Units>
+        <BNum>0130013           </BNum>
+        <INum>0130013</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Сканер Epson A4 Perfection V10</Name>
+      <Units>
+        <BNum>00-000000000000270</BNum>
+        <INum>101040000240</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000271</BNum>
+        <INum>101040000241</INum>
+        <Tayp>З</Tayp>
+      </Units>
+      <Units>
+        <BNum>00-000000000000272</BNum>
+        <INum>101040000242</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Сканер HP Jet 3670</Name>
+      <Units>
+        <BNum>00-000000000000350</BNum>
+        <INum>000000000182</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Сканер HP ScanJet 5550C</Name>
+      <Units>
+        <BNum>0130037           </BNum>
+        <INum>0130037</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Телефакс</Name>
+    <Unit>
+      <Name>Телефакс Panasonic KX-FT78RU</Name>
+      <Units>
+        <BNum>0130036           </BNum>
+        <INum>0130036</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Телефакс Panasonic KX-FTC 478x</Name>
+      <Units>
+        <BNum>0130016           </BNum>
+        <INum>0130016</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Panasonic KX-F130B</Name>
+      <Units>
+        <BNum>0130048.4         </BNum>
+        <INum>0130048.4</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Телефон</Name>
+    <Unit>
+      <Name>Телефон Samsung N910 Galaxy Note 4 LTE (355025062715949)</Name>
+      <Units>
+        <BNum>0180070           </BNum>
+        <INum>01300103</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Телефон Siemens  C28</Name>
+      <Units>
+        <BNum>0130030           </BNum>
+        <INum>0130030</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Телефон Siemens SL45</Name>
+      <Units>
+        <BNum>0130029           </BNum>
+        <INum>0130029</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>LG GT-7720A</Name>
+      <Units>
+        <BNum>0130053           </BNum>
+        <INum>0130053</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Nokia E50-2 black</Name>
+      <Units>
+        <BNum>0130059           </BNum>
+        <INum>0130059</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Вебкамера</Name>
+    <Unit>
+      <Name>Вебкамера Logitech Webcam C925e</Name>
+      <Units>
+        <BNum>00-000000000001121</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Вебкамера Logitech Webcam Pro C920</Name>
+      <Units>
+        <BNum>00-000000000001128</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>USB Hub</Name>
+    <Unit>
+      <Name>Внешний USB hub с блоком питания</Name>
+      <Units>
+        <BNum>00-000000000000831</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Гарнитура</Name>
+    <Unit>
+      <Name>Гарнитура Microsoft LifeChat LX-6000</Name>
+      <Units>
+        <BNum>00-000000000001129</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Диктофон </Name>
+    <Unit>
+      <Name>Диктофон цифровой SONy</Name>
+      <Units>
+        <BNum>00-000000000000056</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>USB HDD</Name>
+    <Unit>
+      <Name>Жесткий диск HDD 2.5 USB 4000Gb</Name>
+      <Units>
+        <BNum>00-000000000001127</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Зиминий комплект</Name>
+    <Unit>
+      <Name>Зиминий комплект ( к кондиционеру Сплит-система RS-A18E\RU-A18E)</Name>
+      <Units>
+        <BNum>00-000000000001033</BNum>
+        <INum>792019000007</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Кассовый аппарат</Name>
+    <Unit>
+      <Name>ККМ Меркурий 185Ф безФН (кассовый аппарат)</Name>
+      <Units>
+        <BNum>00-000000000000992</BNum>
+        <INum></INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Радиомодуль</Name>
+    <Unit>
+      <Name>CNU-510 (модем)</Name>
+      <Units>
+        <BNum>0130061           </BNum>
+        <INum>0130061</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Радиотелефон</Name>
+    <Unit>
+      <Name>Panasonic KX-TG6461RUT</Name>
+      <Units>
+        <BNum>0180036           </BNum>
+        <INum>0130090</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+    <Unit>
+      <Name>Panasonic KX-TG7206RUT</Name>
+      <Units>
+        <BNum>0130070           </BNum>
+        <INum>0130070</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+  <TaypG>
+    <Name>Цифровой фотоаппарат</Name>
+    <Unit>
+      <Name>Samsung PL50 silver</Name>
+      <Units>
+        <BNum>0130075           </BNum>
+        <INum>0130075</INum>
+        <Tayp>З</Tayp>
+      </Units>
+    </Unit>
+  </TaypG>
+</root>

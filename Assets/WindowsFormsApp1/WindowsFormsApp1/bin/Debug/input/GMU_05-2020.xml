@@ -1,0 +1,698 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>admin</Author>
+  <LastAuthor>admin</LastAuthor>
+  <Created>2023-10-30T09:56:05Z</Created>
+  <LastSaved>2023-11-01T06:55:06Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12330</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="m1962777031632">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777031652">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777031672">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777031692">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777031712">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777031732">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777031752">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777031772">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777023904">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777023924">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777023944">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777023964">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777023984">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777031968">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777031988">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777032008">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777032028">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="m1962777032048">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s16">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s18">
+   <Alignment ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s19">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="Short Date"/>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Times New Roman" x:CharSet="204" x:Family="Roman"
+    ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s21">
+   <NumberFormat ss:Format="mmm/yy"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Лист1">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="51" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Row ss:Height="15.75">
+    <Cell><Data ss:Type="String">Table</Data></Cell>
+    <Cell><Data ss:Type="String">GMU</Data></Cell>
+    <Cell ss:StyleID="s21"><Data ss:Type="String">.05-2020</Data></Cell>
+   </Row>
+   <Row ss:Height="102.75">
+    <Cell ss:MergeDown="1" ss:StyleID="m1962777023904"><Data ss:Type="DateTime">2023-11-01T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">15.00-16.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Региональное управление и территориальное планирование (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.и.н. доц. Кальсина А. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">16.30-19.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Этика государственной и муниципальной службы (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Д.и.н. доц. Шестова Т. Ю.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:StyleID="s19"><Data ss:Type="DateTime">2023-11-02T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">13.20-16.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы государственной и муниципальной службы (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:StyleID="s19"><Data ss:Type="DateTime">2023-11-03T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Этика государственной и муниципальной службы (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Д.и.н. доц. Шестова Т. Ю.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="73.5">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962777023924"><Data ss:Type="DateTime">2023-11-07T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">13.20-14.40</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Практика по получению профессиональных умений и опыта профессиональной деятельности и исследовательская работа (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Д.и.н. доц. Шестова Т. Ю.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Экономика муниципальных образований (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.э.н. доц. Домбровский М. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="73.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">18.00-19.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Экономика муниципальных образований (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.э.н. доц. Домбровский М. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:MergeDown="1" ss:StyleID="m1962777023944"><Data ss:Type="DateTime">2023-11-08T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">11.50-14.40</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы государственной и муниципальной службы (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Этика государственной и муниципальной службы (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Д.и.н. доц. Шестова Т. Ю.</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="77.25">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962777023964"><Data ss:Type="DateTime">2023-11-09T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Экономика муниципальных образований (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.э.н. доц. Домбровский М. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">18.00-19.20</Data></Cell>
+    <Cell ss:StyleID="s17"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Экономика муниципальных образований </Font><B><Font
+        html:Color="#000000">(зачёт)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.э.н. доц. Домбровский М. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">19.30-20.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы национальной безопасности (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ю.н. Бызова М. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962777023984"><Data ss:Type="DateTime">2023-11-10T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">11.50-14.40</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы государственной и муниципальной службы (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Прогнозирование и планирование (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.э.н. доц. Носков А. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="Number">301</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">18.00-19.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы национальной безопасности (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ю.н. Бызова М. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="Number">301</Data></Cell>
+   </Row>
+   <Row ss:Height="153.75">
+    <Cell ss:MergeDown="1" ss:StyleID="m1962777031968"><Data ss:Type="DateTime">2023-11-11T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">8.30-13.10</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Документационное обеспечение и делопроизводство в государственном и муниципальном управлении (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Олесиюк О. С.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">13.20-16.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Прогнозирование и планирование (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.э.н. доц. Носков А. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="Number">301</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:MergeDown="3" ss:StyleID="m1962777031988"><Data ss:Type="DateTime">2023-11-13T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">11.50-13.10</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы государственной и муниципальной службы (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">13.20-14.40</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы государственной и муниципальной службы (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">15.00-16.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы национальной безопасности (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ю.н. Бызова М. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">16.30-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы национальной безопасности (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ю.н. Бызова М. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:MergeDown="1" ss:StyleID="m1962777032008"><Data ss:Type="DateTime">2023-11-14T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">13.20-14.40</Data></Cell>
+    <Cell ss:StyleID="s17"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Этика государственной и муниципальной службы </Font><B><Font
+        html:Color="#000000">(зачёт)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Д.и.н. доц. Шестова Т. Ю.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="153.75">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">15.00-19.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Документационное обеспечение и делопроизводство в государственном и муниципальном управлении (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Олесиюк О. С.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:MergeDown="1" ss:StyleID="m1962777032028"><Data ss:Type="DateTime">2023-11-15T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Исследование систем управления (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.т.н. доц. Мудров О. И.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">18.00-20.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы национальной безопасности (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ю.н. Бызова М. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962777032048"><Data ss:Type="DateTime">2023-11-16T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">11.50-14.40</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы государственной и муниципальной службы (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="102.75">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Региональное управление и территориальное планирование (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.и.н. доц. Кальсина А. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">18.00-19.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы национальной безопасности (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ю.н. Бызова М. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962777031672"><Data ss:Type="DateTime">2023-11-17T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">15.00-16.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Исследование систем управления (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.т.н. доц. Мудров О. И.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">16.30-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Исследование систем управления (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.т.н. доц. Мудров О. И.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">18.00-20.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы национальной безопасности (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ю.н. Бызова М. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="51.75">
+    <Cell ss:MergeDown="1" ss:StyleID="m1962777031692"><Data ss:Type="DateTime">2023-11-18T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">10.00-11.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Прогнозирование и планирование (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.э.н. доц. Носков А. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="Number">301</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">11.50-13.10</Data></Cell>
+    <Cell ss:StyleID="s17"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Прогнозирование и планирование </Font><B><Font
+        html:Color="#000000">(зачёт)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.э.н. доц. Носков А. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="Number">301</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:MergeDown="1" ss:StyleID="m1962777031712"><Data ss:Type="DateTime">2023-11-20T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">11.50-14.40</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы государственной и муниципальной службы (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="102.75">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Региональное управление и территориальное планирование (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.и.н. доц. Кальсина А. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962777031732"><Data ss:Type="DateTime">2023-11-21T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Исследование систем управления (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.т.н. доц. Мудров О. И.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="153.75">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">18.00-19.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Документационное обеспечение и делопроизводство в государственном и муниципальном управлении (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Олесиюк О. С.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="63">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">19.30-20.50</Data></Cell>
+    <Cell ss:StyleID="s17"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Документационное обеспечение и делопроизводство в государственном и муниципальном управлении </Font><B><Font
+        html:Color="#000000">(зачёт)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">Олесиюк О. С.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962777031752"><Data ss:Type="DateTime">2023-11-22T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">11.50-14.40</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы государственной и муниципальной службы (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s20"><Data ss:Type="Number">105</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">15.00-16.20</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Исследование систем управления (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.т.н. доц. Мудров О. И.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="Number">301</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">16.30-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Исследование систем управления </Font><B><Font
+        html:Color="#000000">(зачёт)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.т.н. доц. Мудров О. И.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="Number">301</Data></Cell>
+   </Row>
+   <Row ss:Height="102.75">
+    <Cell ss:MergeDown="1" ss:StyleID="m1962777031772"><Data ss:Type="DateTime">2023-11-23T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">15.00-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Региональное управление и территориальное планирование (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.и.н. доц. Кальсина А. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="115.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">18.00-19.20</Data></Cell>
+    <Cell ss:StyleID="s17"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Региональное управление и территориальное планирование </Font><B><Font
+        html:Color="#000000">(экзамен)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.и.н. доц. Кальсина А. А.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:MergeDown="3" ss:StyleID="m1962777031632"><Data ss:Type="DateTime">2023-11-24T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">11.50-13.10</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы государственной и муниципальной службы (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="115.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">13.20-14.40</Data></Cell>
+    <Cell ss:StyleID="s17"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Основы государственной и муниципальной службы </Font><B><Font
+        html:Color="#000000">(защита курсовой работы)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="90">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">15.00-16.20</Data></Cell>
+    <Cell ss:StyleID="s17"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Основы государственной и муниципальной службы </Font><B><Font
+        html:Color="#000000">(экзамен)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ф.н. Лангинен А. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">16.30-17.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы национальной безопасности (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ю.н. Бызова М. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:MergeDown="2" ss:StyleID="m1962777031652"><Data ss:Type="DateTime">2023-11-25T00:00:00.000</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">8.30-9.50</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы национальной безопасности (л)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ю.н. Бызова М. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="64.5">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">10.00-13.10</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Основы национальной безопасности (п)</Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ю.н. Бызова М. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+   <Row ss:Height="77.25">
+    <Cell ss:Index="2" ss:StyleID="s16"><Data ss:Type="String">13.20-14.40</Data></Cell>
+    <Cell ss:StyleID="s17"><ss:Data ss:Type="String"
+      xmlns="http://www.w3.org/TR/REC-html40"><Font html:Color="#000000">Основы национальной безопасности </Font><B><Font
+        html:Color="#000000">(зачёт)</Font></B></ss:Data></Cell>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">К.ю.н. Бызова М. В.</Data></Cell>
+    <Cell ss:StyleID="s16"><Data ss:Type="String">105а</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>45</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>44</ActiveRow>
+     <RangeSelection>R45C1:R48C1</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>
